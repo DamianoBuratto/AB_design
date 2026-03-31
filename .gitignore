@@ -1,0 +1,37 @@
+# GROMACS 仿真输出（轨迹、能量、坐标、检查点）
+*.xtc
+*.trr
+*.edr
+*.cpt
+*.tpr
+*.ndx
+*.xvg
+*.gro
+*.log
+mdout.mdp
+
+# GROMACS 结构中间产物
+*.pdb
+
+# 仿真结果目录
+MD/results/
+FEP/inputs/*/replica_*/
+FEP/outputs/
+
+# Emacs 备份文件
+\#*\#
+.\#*
+
+# Python 缓存
+__pycache__/
+*.pyc
+.lh/
+*.npz
+
+# 大型数据文件
+*.pse
+*.cif
+
+# SLURM 输出日志
+*.err
+slurm_*.out

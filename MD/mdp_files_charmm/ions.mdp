@@ -1,0 +1,13 @@
+;===============================================================
+; pHLA MD Automation - Ionization Parameters (CHARMM36m)
+; For gmx grompp (prepare TPR file before genion)
+;===============================================================
+
+; Only for generating TPR, not for actual MD run
+integrator  = steep
+nsteps      = 0
+
+; Electrostatics and Van der Waals settings
+rcoulomb    = 1.2
+rvdw        = 1.2
+coulombtype = PME

@@ -1,0 +1,5 @@
+INPUT_PDB=/public/home/xuziyi/RFantibody/data/p53_R175H_cut_HLT.pdb
+FRAMEWORK_PDB=/public/home/xuziyi/RFantibody/data/6w51_antibody_HLT.pdb
+OUTPUT_DIR=/public/home/xuziyi/RFantibody/outputs
+WEIGHTS_DIR=/public/home/xuziyi/RFantibody/weights
+PROJECT_DIR=/public/home/xuziyi/RFantibody
