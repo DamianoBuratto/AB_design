@@ -129,7 +129,6 @@ Ctrl+A, D
 | `scripts/setup_fep.sh` | Full setup: GRO→PDB, pmx mutate, pdb2gmx, solvate, genion, replica copy, reverse dirs |
 | `scripts/submit_fep.sh` | Batch-generate and submit SLURM jobs|
 | `scripts/analyze_fep.py` | MBAR post-processing → ΔΔG_binding with overlap matrices and convergence plots |
-
 | `mdps/em_fep.mdp` | Energy minimization MDP (steep→CG, pmx hybrid topology) |
 | `mdps/nvt_fep.mdp` | NVT equilibration MDP (300 ps, V-rescale, 310 K) |
 | `mdps/npt_fep.mdp` | NPT equilibration MDP (500 ps, Berendsen) |
