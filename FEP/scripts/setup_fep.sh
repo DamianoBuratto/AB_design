@@ -85,16 +85,15 @@ Usage: bash setup_fep.sh [OPTIONS]
       Fine-grained control (use --with-reverse for the common case).
 
   --rev-gro <file>
-      ARG-end GRO for BOUND reverse.
-      Extract: gmx trjconv -f forward/bound_R1/lambda31/PROD/prod.xtc \
-                           -s forward/bound_R1/lambda31/PROD/prod.tpr \
-                           -o rev_start_bound.gro -dump -1
+      ARG-end GRO for BOUND reverse (OPTIONAL).
+      If omitted, the script auto-extracts the last frame of
+      forward/bound_R1/lambda{N-1}/PROD/prod.xtc. Only needed if
+      you want to supply a custom starting structure.
 
   --rev-gro-unbound <file>
-      ARG-end GRO for UNBOUND reverse (atom count DIFFERS from BOUND -- must be separate file).
-      Extract: gmx trjconv -f forward/unbound_R1/lambda31/PROD/prod.xtc \
-                           -s forward/unbound_R1/lambda31/PROD/prod.tpr \
-                           -o rev_start_unbound.gro -dump -1
+      ARG-end GRO for UNBOUND reverse (OPTIONAL; atom count DIFFERS from
+      BOUND -- must be a separate file if provided manually).
+      If omitted, auto-extracted from forward/unbound_R1/lambda{N-1}/PROD/prod.xtc.
 HELP
             exit 0 ;;
         *) echo "ERROR: Unknown argument: $1. Use --help." >&2; exit 1 ;;
@@ -105,8 +104,8 @@ done
     || { echo "ERROR: --direction must be: forward, reverse, or both" >&2; exit 1; }
 
 if [[ "$DIRECTION" == "reverse" || "$DIRECTION" == "both" ]]; then
-    [[ -z "$REV_GRO" ]] && echo -e "${YELLOW}NOTE: --rev-gro not set. BOUND reverse dirs will have no ions.gro.${NC}"
-    [[ -z "$REV_GRO_UNBOUND" ]] && echo -e "${YELLOW}NOTE: --rev-gro-unbound not set. UNBOUND reverse dirs will have no ions.gro.${NC}"
+    [[ -z "$REV_GRO" ]] && echo -e "${YELLOW}NOTE: --rev-gro not provided; will auto-extract from forward PROD lambda31.${NC}"
+    [[ -z "$REV_GRO_UNBOUND" ]] && echo -e "${YELLOW}NOTE: --rev-gro-unbound not provided; will auto-extract from forward PROD lambda31.${NC}"
 fi
 
 #===============================================================
@@ -550,6 +549,49 @@ if [[ "$DIRECTION" == "reverse" || "$DIRECTION" == "both" ]]; then
 
     [[ -d "forward/bound_R1" ]] \
         || fatal 8 "forward/bound_R1 not found. Run --direction forward first."
+
+    # Auto-extract reverse starting structures from the last lambda window of forward PROD
+    # if --rev-gro / --rev-gro-unbound were not supplied.
+    N_LAMBDA="${#LAMBDAS[@]}"
+    LAST_WIN=$(( N_LAMBDA - 1 ))  # 31 for 32-window schedule
+
+    if [[ -z "$REV_GRO" ]]; then
+        FWD_XTC="${WORK_DIR}/forward/bound_R1/lambda${LAST_WIN}/PROD/prod.xtc"
+        FWD_TPR="${WORK_DIR}/forward/bound_R1/lambda${LAST_WIN}/PROD/prod.tpr"
+        if [[ -f "$FWD_XTC" && -f "$FWD_TPR" ]]; then
+            echo -e "${BLUE}  [8-extract] BOUND: extracting last frame from lambda${LAST_WIN}...${NC}"
+            REV_GRO="${WORK_DIR}/rev_start_bound.gro"
+            echo "0" | gmx trjconv \
+                -f "$FWD_XTC" -s "$FWD_TPR" \
+                -o "$REV_GRO" -dump -1 \
+                &> "${WORK_DIR}/rev_extract_bound.out" \
+                || fatal 8 "Auto-extract BOUND GRO failed. See: ${WORK_DIR}/rev_extract_bound.out"
+            echo -e "${GREEN}  ✓ rev_start_bound.gro extracted${NC}"
+        else
+            echo -e "${YELLOW}  WARNING: forward PROD data not found; cannot auto-extract BOUND GRO.${NC}"
+            echo -e "${YELLOW}    Expected: ${FWD_XTC}${NC}"
+            echo -e "${YELLOW}    Provide via --rev-gro or run forward PROD first.${NC}"
+        fi
+    fi
+
+    if [[ -z "$REV_GRO_UNBOUND" ]]; then
+        FWD_XTC="${WORK_DIR}/forward/unbound_R1/lambda${LAST_WIN}/PROD/prod.xtc"
+        FWD_TPR="${WORK_DIR}/forward/unbound_R1/lambda${LAST_WIN}/PROD/prod.tpr"
+        if [[ -f "$FWD_XTC" && -f "$FWD_TPR" ]]; then
+            echo -e "${BLUE}  [8-extract] UNBOUND: extracting last frame from lambda${LAST_WIN}...${NC}"
+            REV_GRO_UNBOUND="${WORK_DIR}/rev_start_unbound.gro"
+            echo "0" | gmx trjconv \
+                -f "$FWD_XTC" -s "$FWD_TPR" \
+                -o "$REV_GRO_UNBOUND" -dump -1 \
+                &> "${WORK_DIR}/rev_extract_unbound.out" \
+                || fatal 8 "Auto-extract UNBOUND GRO failed. See: ${WORK_DIR}/rev_extract_unbound.out"
+            echo -e "${GREEN}  ✓ rev_start_unbound.gro extracted${NC}"
+        else
+            echo -e "${YELLOW}  WARNING: forward PROD data not found; cannot auto-extract UNBOUND GRO.${NC}"
+            echo -e "${YELLOW}    Expected: ${FWD_XTC}${NC}"
+            echo -e "${YELLOW}    Provide via --rev-gro-unbound or run forward PROD first.${NC}"
+        fi
+    fi
 
     for replica in $(seq 1 "${NR_REPLICAS}"); do
         for state in bound unbound; do

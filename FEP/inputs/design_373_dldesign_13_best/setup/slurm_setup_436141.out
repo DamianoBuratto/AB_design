@@ -1,0 +1,16 @@
+Conda environment activated: #
+pHLA_MD_env
+Python version: Python 3.13.5
+
+======================================
+Start processing: design_373_dldesign_13_best (CHARMM36m)
+======================================
+Step 1: System preparation (topology, solvation, ions, minimization)...
+Step 2: Running NVT and NPT equilibration...
+======================================
+Setup and equilibration completed!
+======================================
+Now submit production jobs:
+  sbatch /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/submit_charmm_design_373_dldesign_13_best_r1.slurm
+  sbatch /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/submit_charmm_design_373_dldesign_13_best_r2.slurm
+  sbatch /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/submit_charmm_design_373_dldesign_13_best_r3.slurm

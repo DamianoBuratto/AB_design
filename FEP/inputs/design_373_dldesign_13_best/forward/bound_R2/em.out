@@ -1,0 +1,1145 @@
+[node15:43154] mca_base_component_repository_open: unable to open mca_plm_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43154] mca_base_component_repository_open: unable to open mca_ras_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43164] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43159] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43161] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43160] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43165] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43172] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43162] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            node15
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+[node15:43169] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43163] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43176] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43167] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43166] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43161] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43161] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43164] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43168] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43160] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43164] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43170] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43160] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43159] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43159] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43178] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43171] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43172] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43172] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43176] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43162] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43176] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43162] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43163] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43163] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43167] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43167] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43169] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43169] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43165] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43165] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43181] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43180] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43177] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43175] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43179] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43174] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43166] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43166] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43182] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43186] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43168] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43168] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43178] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43178] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43170] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43173] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43170] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43185] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43171] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43171] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43184] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43183] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43181] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43181] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43205] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43180] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43180] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43177] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43177] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43206] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43174] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43174] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43199] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43179] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43179] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43175] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43175] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43182] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43182] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43186] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43186] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43188] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43173] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43185] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43173] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43185] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43184] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43184] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43183] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43183] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43206] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43206] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43205] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43205] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43199] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43199] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:43188] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:43188] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+                      :-) GROMACS - gmx mdrun, 2023.2 (-:
+
+Executable:   /public/software/apps/gromacs/2023.2-mpi/bin/gmx_mpi
+Data prefix:  /public/software/apps/gromacs/2023.2-mpi
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound_R2
+Command line:
+  gmx_mpi mdrun -v -deffnm em -multidir lambda0 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 lambda7 lambda8 lambda9 lambda10 lambda11 lambda12 lambda13 lambda14 lambda15 lambda16 lambda17 lambda18 lambda19 lambda20 lambda21 lambda22 lambda23 lambda24 lambda25 lambda26 lambda27 lambda28 lambda29 lambda30 lambda31 -gpu_id 01
+
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 4 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 15 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 2 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 17 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 8 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 30 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 10 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 21 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 28 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 24 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 0 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 23 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 1 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 20 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 11 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 14 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 6 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 27 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 3 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 5 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 12 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 19 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 7 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 16 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 13 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 18 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 29 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 31 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 26 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 9 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 25 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 22 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10115e+06 Fmax= 9.10545e+02, atom= 2972
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10720e+06 Fmax= 8.37595e+02, atom= 2347
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10823e+06 Fmax= 9.36451e+02, atom= 4501
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10037e+06 Fmax= 8.66464e+02, atom= 4500
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10269e+06 Fmax= 8.12063e+02, atom= 2737
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10579e+06 Fmax= 9.00193e+02, atom= 916
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10526e+06 Fmax= 9.06288e+02, atom= 3339
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10374e+06 Fmax= 7.48236e+02, atom= 5007
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10192e+06 Fmax= 8.63994e+02, atom= 1539
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10195e+06 Fmax= 8.40536e+02, atom= 2118
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.09655e+06 Fmax= 8.84441e+02, atom= 4500
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10281e+06 Fmax= 8.64589e+02, atom= 1159
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10537e+06 Fmax= 8.57187e+02, atom= 1369
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10297e+06 Fmax= 9.96063e+02, atom= 6304
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10129e+06 Fmax= 8.25309e+02, atom= 4564
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10848e+06 Fmax= 8.92348e+02, atom= 5542
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10787e+06 Fmax= 8.20425e+02, atom= 2147
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10685e+06 Fmax= 8.70035e+02, atom= 1645
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10941e+06 Fmax= 9.03809e+02, atom= 4500
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10580e+06 Fmax= 1.01752e+03, atom= 1369
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10453e+06 Fmax= 8.88803e+02, atom= 1130
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10674e+06 Fmax= 7.96371e+02, atom= 2215
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09204e+06 Fmax= 1.16747e+04, atom= 2972Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10920e+06 Fmax= 8.61075e+02, atom= 560
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10719e+06 Fmax= 8.46538e+02, atom= 710
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10543e+06 Fmax= 8.56927e+02, atom= 6193
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10036e+06 Fmax= 7.44895e+02, atom= 3667
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10541e+06 Fmax= 9.33829e+02, atom= 1369
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10675e+06 Fmax= 9.35419e+02, atom= 3073
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10113e+06 Fmax= 8.93006e+02, atom= 4505
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10298e+06 Fmax= 8.42302e+02, atom= 3600
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10755e+06 Fmax= 8.47858e+02, atom= 567
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.10667e+06 Fmax= 7.94403e+02, atom= 390
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09673e+06 Fmax= 1.18147e+04, atom= 4257Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09012e+06 Fmax= 1.30079e+04, atom= 4500Step=    1, Dmax= 1.0e-02 nm, Epot= -1.10040e+06 Fmax= 1.29365e+04, atom= 4500Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09131e+06 Fmax= 1.22666e+04, atom= 2737Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09658e+06 Fmax= 1.23794e+04, atom= 916Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09621e+06 Fmax= 1.19296e+04, atom= 3339Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09082e+06 Fmax= 1.13442e+04, atom= 4767Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09197e+06 Fmax= 1.21155e+04, atom= 1539Step=    1, Dmax= 1.0e-02 nm, Epot= -1.08768e+06 Fmax= 1.11824e+04, atom= 3190Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09348e+06 Fmax= 1.16396e+04, atom= 1159Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09153e+06 Fmax= 1.16719e+04, atom= 2118Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09538e+06 Fmax= 1.19626e+04, atom= 1369Step=    1, Dmax= 1.0e-02 nm, Epot= -1.10012e+06 Fmax= 1.14083e+04, atom= 5542Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09584e+06 Fmax= 1.15329e+04, atom= 6304Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09076e+06 Fmax= 1.18219e+04, atom= 4564Step=    2, Dmax= 5.0e-03 nm, Epot= -1.09963e+06 Fmax= 5.36986e+03, atom= 2972Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09561e+06 Fmax= 1.14934e+04, atom= 1183Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09913e+06 Fmax= 1.14490e+04, atom= 1369Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09496e+06 Fmax= 1.15056e+04, atom= 2215Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09708e+06 Fmax= 1.21193e+04, atom= 2147Step=    1, Dmax= 1.0e-02 nm, Epot= -1.10066e+06 Fmax= 1.16124e+04, atom= 4500Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09725e+06 Fmax= 1.13131e+04, atom= 1645Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09932e+06 Fmax= 1.14826e+04, atom= 560Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09706e+06 Fmax= 1.15115e+04, atom= 4257Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09540e+06 Fmax= 1.16456e+04, atom= 3478Step=    1, Dmax= 1.0e-02 nm, Epot= -1.08682e+06 Fmax= 1.16880e+04, atom= 6304Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09277e+06 Fmax= 1.14911e+04, atom= 1205Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09880e+06 Fmax= 1.15783e+04, atom= 5833Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09527e+06 Fmax= 1.16881e+04, atom= 390Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09175e+06 Fmax= 1.19473e+04, atom= 4505Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09703e+06 Fmax= 1.20835e+04, atom= 1369Step=    1, Dmax= 1.0e-02 nm, Epot= -1.09679e+06 Fmax= 1.20367e+04, atom= 567Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10537e+06 Fmax= 5.50573e+03, atom= 4257Step=    2, Dmax= 5.0e-03 nm, Epot= -1.09861e+06 Fmax= 6.05293e+03, atom= 4500Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10697e+06 Fmax= 6.02089e+03, atom= 4500Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10068e+06 Fmax= 5.74508e+03, atom= 2737Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10424e+06 Fmax= 5.74332e+03, atom= 916Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10375e+06 Fmax= 5.49814e+03, atom= 3339Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10138e+06 Fmax= 5.33324e+03, atom= 4767Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10022e+06 Fmax= 5.60690e+03, atom= 1539Step=    2, Dmax= 5.0e-03 nm, Epot= -1.09509e+06 Fmax= 5.17638e+03, atom= 3190Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10123e+06 Fmax= 5.37505e+03, atom= 1159Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10015e+06 Fmax= 5.39292e+03, atom= 2118Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10366e+06 Fmax= 5.54535e+03, atom= 1657Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10187e+06 Fmax= 5.26416e+03, atom= 6304Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10115e+06 Fmax= 2.22753e+03, atom= 2972
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10711e+06 Fmax= 5.27891e+03, atom= 5542Step=    2, Dmax= 5.0e-03 nm, Epot= -1.09946e+06 Fmax= 5.49537e+03, atom= 4564Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10750e+06 Fmax= 5.32195e+03, atom= 560Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10304e+06 Fmax= 5.32391e+03, atom= 1183Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10796e+06 Fmax= 5.35984e+03, atom= 4500Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10521e+06 Fmax= 5.22146e+03, atom= 1645Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10479e+06 Fmax= 5.20799e+03, atom= 1369Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10596e+06 Fmax= 5.64519e+03, atom= 2147Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10370e+06 Fmax= 5.39916e+03, atom= 3478Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10544e+06 Fmax= 5.36095e+03, atom= 4257Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10463e+06 Fmax= 5.34939e+03, atom= 2215Step=    2, Dmax= 5.0e-03 nm, Epot= -1.09788e+06 Fmax= 5.50222e+03, atom= 6304Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10121e+06 Fmax= 5.33185e+03, atom= 1205Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10548e+06 Fmax= 5.34419e+03, atom= 5833Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10464e+06 Fmax= 5.44510e+03, atom= 390Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10567e+06 Fmax= 5.59481e+03, atom= 567Step=    2, Dmax= 5.0e-03 nm, Epot= -1.09955e+06 Fmax= 5.52166e+03, atom= 4505Step=    2, Dmax= 5.0e-03 nm, Epot= -1.10404e+06 Fmax= 5.57903e+03, atom= 1369Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10714e+06 Fmax= 2.34647e+03, atom= 4257Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10033e+06 Fmax= 2.58956e+03, atom= 4500Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10827e+06 Fmax= 2.55051e+03, atom= 4500
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10261e+06 Fmax= 2.47168e+03, atom= 2737Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10579e+06 Fmax= 2.42584e+03, atom= 916Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10526e+06 Fmax= 2.29357e+03, atom= 3339Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10359e+06 Fmax= 2.31819e+03, atom= 4767Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10189e+06 Fmax= 2.36706e+03, atom= 1539Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10279e+06 Fmax= 2.25197e+03, atom= 1159Step=    3, Dmax= 2.5e-03 nm, Epot= -1.09657e+06 Fmax= 2.17368e+03, atom= 3190
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10190e+06 Fmax= 2.27354e+03, atom= 2118Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10138e+06 Fmax= 1.62863e+03, atom= 4500
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10533e+06 Fmax= 2.35820e+03, atom= 1657Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10849e+06 Fmax= 2.20336e+03, atom= 5542
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10304e+06 Fmax= 2.13482e+03, atom= 6304
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10916e+06 Fmax= 2.23634e+03, atom= 560Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10453e+06 Fmax= 2.22442e+03, atom= 1183
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10123e+06 Fmax= 2.33521e+03, atom= 4564Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10941e+06 Fmax= 2.23298e+03, atom= 4500
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10538e+06 Fmax= 2.27628e+03, atom= 3478Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10683e+06 Fmax= 2.18128e+03, atom= 1645Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10588e+06 Fmax= 2.09383e+03, atom= 1369
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10779e+06 Fmax= 2.41200e+03, atom= 2147Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10714e+06 Fmax= 2.27999e+03, atom= 4257Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10663e+06 Fmax= 2.27709e+03, atom= 2215Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10019e+06 Fmax= 2.39649e+03, atom= 6304Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10679e+06 Fmax= 2.22228e+03, atom= 5833
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10293e+06 Fmax= 2.26373e+03, atom= 1205Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10657e+06 Fmax= 2.32583e+03, atom= 390Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10748e+06 Fmax= 2.37321e+03, atom= 567Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10112e+06 Fmax= 2.31443e+03, atom= 4505Step=    3, Dmax= 2.5e-03 nm, Epot= -1.10543e+06 Fmax= 2.32564e+03, atom= 1369
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10738e+06 Fmax= 7.65983e+02, atom= 4257
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10056e+06 Fmax= 8.62155e+02, atom= 4500
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10850e+06 Fmax= 1.37736e+03, atom= 4500
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10288e+06 Fmax= 8.32955e+02, atom= 2737
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10602e+06 Fmax= 1.77422e+03, atom= 1369
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10699e+06 Fmax= 1.59141e+03, atom= 5833
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10598e+06 Fmax= 7.69756e+02, atom= 916
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10545e+06 Fmax= 6.95130e+02, atom= 3339
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10838e+06 Fmax= 3.36706e+03, atom= 4500Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10392e+06 Fmax= 8.10572e+02, atom= 4767
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10211e+06 Fmax= 7.50987e+02, atom= 1539
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10594e+06 Fmax= 2.94793e+03, atom= 4500Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10299e+06 Fmax= 6.98958e+02, atom= 1159
+
+writing lowest energy coordinates.
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.09678e+06 Fmax= 1.74710e+03, atom= 4500
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10683e+06 Fmax= 3.04528e+03, atom= 5833Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10214e+06 Fmax= 7.28889e+02, atom= 5340
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10120e+06 Fmax= 3.10442e+03, atom= 4500Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10556e+06 Fmax= 7.67651e+02, atom= 1657
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10870e+06 Fmax= 1.61902e+03, atom= 3228
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10320e+06 Fmax= 1.67077e+03, atom= 6304
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10475e+06 Fmax= 1.59109e+03, atom= 1183
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10561e+06 Fmax= 7.28158e+02, atom= 1369
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10938e+06 Fmax= 6.96735e+02, atom= 560
+
+writing lowest energy coordinates.
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10963e+06 Fmax= 1.68297e+03, atom= 4500
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10855e+06 Fmax= 9.97739e+02, atom= 4500
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10704e+06 Fmax= 6.69174e+02, atom= 1645
+
+writing lowest energy coordinates.
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10148e+06 Fmax= 7.56432e+02, atom= 4564
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10398e+06 Fmax= 1.06411e+03, atom= 4767
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10805e+06 Fmax= 7.95605e+02, atom= 2147
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10737e+06 Fmax= 7.38621e+02, atom= 4257
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10693e+06 Fmax= 7.55935e+02, atom= 2044
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10613e+06 Fmax= 5.88607e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10054e+06 Fmax= 8.41424e+02, atom= 6304
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10317e+06 Fmax= 7.33274e+02, atom= 1205
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10685e+06 Fmax= 7.66816e+02, atom= 390
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10132e+06 Fmax= 7.12603e+02, atom= 4505
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.10773e+06 Fmax= 7.62918e+02, atom= 567
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10744e+06 Fmax= 1.13646e+03, atom= 4257
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.10566e+06 Fmax= 1.50458e+03, atom= 1369
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10709e+06 Fmax= 7.27500e+02, atom= 5833
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10064e+06 Fmax= 1.04961e+03, atom= 4500
+
+Steepest Descents converged to Fmax < 700 in 5 steps
+Potential Energy  = -1.1054486e+06
+Maximum force     =  6.9513037e+02 on atom 3339
+Norm of force     =  3.9723724e+01
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10295e+06 Fmax= 1.08927e+03, atom= 2737
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10855e+06 Fmax= 1.82188e+03, atom= 4500Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10949e+06 Fmax= 3.03807e+03, atom= 4500Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10401e+06 Fmax= 1.24657e+03, atom= 4767
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10743e+06 Fmax= 1.16594e+03, atom= 4257
+
+Steepest Descents converged to Fmax < 700 in 5 steps
+Potential Energy  = -1.1029894e+06
+Maximum force     =  6.9895850e+02 on atom 1159
+Norm of force     =  4.0902257e+01
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10605e+06 Fmax= 1.13067e+03, atom= 916
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10703e+06 Fmax= 2.01856e+03, atom= 5833Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10218e+06 Fmax= 1.22675e+03, atom= 1539
+
+Steepest Descents converged to Fmax < 700 in 5 steps
+Potential Energy  = -1.1093832e+06
+Maximum force     =  6.9673492e+02 on atom 560
+Norm of force     =  4.1056023e+01
+
+Steepest Descents converged to Fmax < 700 in 5 steps
+Potential Energy  = -1.1070356e+06
+Maximum force     =  6.6917407e+02 on atom 1645
+Norm of force     =  4.0514146e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10858e+06 Fmax= 4.11339e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10974e+06 Fmax= 6.75072e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10401e+06 Fmax= 1.48844e+03, atom= 4767Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10747e+06 Fmax= 1.15473e+03, atom= 4257
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.09666e+06 Fmax= 2.94984e+03, atom= 4500
+Steepest Descents converged to Fmax < 700 in 7 steps
+Potential Energy  = -1.1061340e+06
+Maximum force     =  5.8860687e+02 on atom 4500
+Norm of force     =  2.3772925e+01
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10219e+06 Fmax= 1.17223e+03, atom= 5340
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10150e+06 Fmax= 7.40726e+02, atom= 4500
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10711e+06 Fmax= 6.45527e+02, atom= 5833
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10562e+06 Fmax= 1.15062e+03, atom= 1657
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10307e+06 Fmax= 2.91925e+03, atom= 6304Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10852e+06 Fmax= 3.01571e+03, atom= 3228Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10567e+06 Fmax= 1.15637e+03, atom= 1369
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10457e+06 Fmax= 3.04417e+03, atom= 1183Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10153e+06 Fmax= 1.14790e+03, atom= 4564
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10811e+06 Fmax= 1.08624e+03, atom= 2147
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10411e+06 Fmax= 1.48679e+02, atom= 20775
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10698e+06 Fmax= 1.17521e+03, atom= 2215
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10746e+06 Fmax= 1.63485e+03, atom= 4257Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10322e+06 Fmax= 1.20413e+03, atom= 1205
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10067e+06 Fmax= 1.34554e+03, atom= 4500
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10748e+06 Fmax= 1.18582e+03, atom= 4257
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10061e+06 Fmax= 1.02165e+03, atom= 6304
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10690e+06 Fmax= 1.13176e+03, atom= 3040
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10139e+06 Fmax= 1.21019e+03, atom= 4505
+Step=    5, Dmax= 1.5e-03 nm, Epot= -1.10779e+06 Fmax= 1.18259e+03, atom= 4500
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.10548e+06 Fmax= 3.13832e+03, atom= 1369Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10566e+06 Fmax= 1.20629e+03, atom= 1657
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10571e+06 Fmax= 1.17291e+03, atom= 1369
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10299e+06 Fmax= 1.23398e+03, atom= 2737
+
+Steepest Descents converged to Fmax < 700 in 7 steps
+Potential Energy  = -1.1097380e+06
+Maximum force     =  6.7507178e+02 on atom 4500
+Norm of force     =  2.6365353e+01
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10158e+06 Fmax= 1.14960e+03, atom= 4564
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1085850e+06
+Maximum force     =  4.1133923e+02 on atom 4500
+Norm of force     =  1.7684626e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10754e+06 Fmax= 2.40062e+02, atom= 4257
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10071e+06 Fmax= 1.47466e+03, atom= 4500
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10747e+06 Fmax= 1.60058e+03, atom= 4257Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10609e+06 Fmax= 1.18977e+03, atom= 916
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10694e+06 Fmax= 1.20010e+03, atom= 4500
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10144e+06 Fmax= 1.09833e+03, atom= 4505
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1071101e+06
+Maximum force     =  6.4552667e+02 on atom 5833
+Norm of force     =  2.5975553e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10567e+06 Fmax= 1.59324e+03, atom= 1657
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10571e+06 Fmax= 1.59152e+03, atom= 1369Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10299e+06 Fmax= 1.54733e+03, atom= 2737
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10223e+06 Fmax= 1.10439e+03, atom= 1539
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10157e+06 Fmax= 1.58926e+03, atom= 4564Step=    6, Dmax= 1.8e-03 nm, Epot= -1.09691e+06 Fmax= 6.03878e+02, atom= 4500
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1041082e+06
+Maximum force     =  1.4867909e+02 on atom 20775
+Norm of force     =  1.7377133e+01
+Step=    8, Dmax= 2.6e-03 nm, Epot= -1.10071e+06 Fmax= 1.94328e+03, atom= 4500
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10224e+06 Fmax= 1.14305e+03, atom= 5340
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10144e+06 Fmax= 2.08797e+03, atom= 4500Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10610e+06 Fmax= 1.58288e+03, atom= 916
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10755e+06 Fmax= 2.07394e+02, atom= 4257
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10693e+06 Fmax= 1.61281e+03, atom= 4500Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10142e+06 Fmax= 1.67912e+03, atom= 4505Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10331e+06 Fmax= 6.23944e+02, atom= 6304
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10578e+06 Fmax= 2.09589e+02, atom= 1369
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10880e+06 Fmax= 6.97684e+02, atom= 3228
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 2.6e-03 nm, Epot= -1.10568e+06 Fmax= 1.78330e+03, atom= 1657
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10485e+06 Fmax= 7.27757e+02, atom= 1183
+Step=    8, Dmax= 2.6e-03 nm, Epot= -1.10300e+06 Fmax= 1.79657e+03, atom= 2737
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10223e+06 Fmax= 1.73594e+03, atom= 1539Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10165e+06 Fmax= 2.39323e+02, atom= 4500
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10814e+06 Fmax= 1.21657e+03, atom= 2147
+
+writing lowest energy coordinates.
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10702e+06 Fmax= 1.12729e+03, atom= 2215
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10328e+06 Fmax= 1.10114e+03, atom= 1205
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10063e+06 Fmax= 1.28223e+03, atom= 2539
+Step=    9, Dmax= 3.1e-03 nm, Epot= -1.10073e+06 Fmax= 2.13267e+03, atom= 4500
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10223e+06 Fmax= 1.61139e+03, atom= 5340
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1075395e+06
+Maximum force     =  2.4006212e+02 on atom 4257
+Norm of force     =  1.7691524e+01
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10574e+06 Fmax= 8.17409e+02, atom= 1369
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.10784e+06 Fmax= 1.17040e+03, atom= 4500
+Step=    8, Dmax= 2.6e-03 nm, Epot= -1.10611e+06 Fmax= 1.74273e+03, atom= 916
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10702e+06 Fmax= 2.29587e+02, atom= 4953
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10150e+06 Fmax= 2.90882e+02, atom= 4505
+
+writing lowest energy coordinates.
+Step=    9, Dmax= 3.1e-03 nm, Epot= -1.10567e+06 Fmax= 2.26093e+03, atom= 1657Step=    9, Dmax= 3.1e-03 nm, Epot= -1.10297e+06 Fmax= 2.26381e+03, atom= 3571Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10229e+06 Fmax= 3.17692e+02, atom= 1539
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10814e+06 Fmax= 1.52431e+03, atom= 2147
+Steepest Descents converged to Fmax < 700 in 7 steps
+Potential Energy  = -1.0969114e+06
+Maximum force     =  6.0387762e+02 on atom 4500
+Norm of force     =  2.6804447e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10699e+06 Fmax= 1.64995e+03, atom= 2215Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10064e+06 Fmax= 1.47641e+03, atom= 2539
+Step=   10, Dmax= 3.7e-03 nm, Epot= -1.10071e+06 Fmax= 2.77847e+03, atom= 4500Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10231e+06 Fmax= 2.45999e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    9, Dmax= 3.1e-03 nm, Epot= -1.10608e+06 Fmax= 2.25308e+03, atom= 916
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1075469e+06
+Maximum force     =  2.0739374e+02 on atom 4257
+Norm of force     =  1.7188316e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10784e+06 Fmax= 1.67262e+03, atom= 4500Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10569e+06 Fmax= 1.92249e+03, atom= 1369
+Steepest Descents converged to Fmax < 700 in 7 steps
+Potential Energy  = -1.1033085e+06
+Maximum force     =  6.2394415e+02 on atom 6304
+Norm of force     =  2.7885890e+01
+
+Steepest Descents converged to Fmax < 700 in 7 steps
+Potential Energy  = -1.1088014e+06
+Maximum force     =  6.9768427e+02 on atom 3228
+Norm of force     =  2.9088368e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1057811e+06
+Maximum force     =  2.0958868e+02 on atom 1369
+Norm of force     =  1.7662674e+01
+Step=   10, Dmax= 1.6e-03 nm, Epot= -1.10312e+06 Fmax= 2.37557e+02, atom= 3571
+
+writing lowest energy coordinates.
+Step=   10, Dmax= 1.6e-03 nm, Epot= -1.10578e+06 Fmax= 2.40440e+02, atom= 1657
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1016535e+06
+Maximum force     =  2.3932298e+02 on atom 4500
+Norm of force     =  1.9090949e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10153e+06 Fmax= 6.73031e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10821e+06 Fmax= 1.84714e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10710e+06 Fmax= 2.73675e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 2.6e-03 nm, Epot= -1.10060e+06 Fmax= 1.87631e+03, atom= 2539Step=   11, Dmax= 1.9e-03 nm, Epot= -1.10083e+06 Fmax= 3.20395e+02, atom= 4500
+
+writing lowest energy coordinates.
+Step=   10, Dmax= 1.6e-03 nm, Epot= -1.10620e+06 Fmax= 2.88265e+02, atom= 4500
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1070151e+06
+Maximum force     =  2.2958679e+02 on atom 4953
+Norm of force     =  1.7163437e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10791e+06 Fmax= 2.50635e+02, atom= 4500
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10577e+06 Fmax= 5.69225e+02, atom= 4500
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1015024e+06
+Maximum force     =  2.9088150e+02 on atom 4505
+Norm of force     =  1.9771597e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10480e+06 Fmax= 2.03642e+03, atom= 1183
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1022885e+06
+Maximum force     =  3.1769205e+02 on atom 1539
+Norm of force     =  1.9225718e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.10326e+06 Fmax= 1.69436e+03, atom= 1205Step=    9, Dmax= 1.3e-03 nm, Epot= -1.10077e+06 Fmax= 2.05150e+02, atom= 4129
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1023136e+06
+Maximum force     =  2.4599905e+02 on atom 4500
+Norm of force     =  1.9036100e+01
+
+Steepest Descents converged to Fmax < 700 in 11 steps
+Potential Energy  = -1.1031151e+06
+Maximum force     =  2.3755696e+02 on atom 3571
+Norm of force     =  1.5977417e+01
+
+Steepest Descents converged to Fmax < 700 in 11 steps
+Potential Energy  = -1.1057758e+06
+Maximum force     =  2.4043999e+02 on atom 1657
+Norm of force     =  1.5073677e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1015268e+06
+Maximum force     =  6.7303107e+02 on atom 4500
+Norm of force     =  2.6860022e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1082112e+06
+Maximum force     =  1.8471432e+02 on atom 4500
+Norm of force     =  1.6588597e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1070999e+06
+Maximum force     =  2.7367535e+02 on atom 4500
+Norm of force     =  1.8900962e+01
+
+Steepest Descents converged to Fmax < 700 in 12 steps
+Potential Energy  = -1.1008274e+06
+Maximum force     =  3.2039499e+02 on atom 4500
+Norm of force     =  1.6210842e+01
+
+Steepest Descents converged to Fmax < 700 in 11 steps
+Potential Energy  = -1.1061990e+06
+Maximum force     =  2.8826468e+02 on atom 4500
+Norm of force     =  1.5635179e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1079072e+06
+Maximum force     =  2.5063499e+02 on atom 4500
+Norm of force     =  1.7386563e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1057742e+06
+Maximum force     =  5.6922461e+02 on atom 4500
+Norm of force     =  2.4068209e+01
+
+Steepest Descents converged to Fmax < 700 in 10 steps
+Potential Energy  = -1.1007726e+06
+Maximum force     =  2.0515024e+02 on atom 4129
+Norm of force     =  1.7808606e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10489e+06 Fmax= 6.54626e+02, atom= 1183
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.10334e+06 Fmax= 2.97195e+02, atom= 1205
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1048886e+06
+Maximum force     =  6.5462592e+02 on atom 1183
+Norm of force     =  2.7357109e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1033410e+06
+Maximum force     =  2.9719525e+02 on atom 1205
+Norm of force     =  1.9643125e+01
+
+GROMACS reminds you: "It is disconcerting to reflect on the number of students we have flunked in chemistry for not knowing what we later found to be untrue." (Robert L. Weber)
+
+[node15:43154] 31 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[node15:43154] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

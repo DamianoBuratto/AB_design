@@ -1,0 +1,70 @@
+                     :-) GROMACS - gmx make_ndx, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound
+Command line:
+  gmx make_ndx -f temp_posres_chA.pdb -o index_posres_chA.ndx
+
+
+Reading structure file
+
+GROMACS reminds you: "C has the power of assembly language and the convenience of... assembly language." (Dennis Ritchie)
+
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:   180    Protein residues
+Analysing Protein...
+
+  0 System              :  2859 atoms
+  1 Protein             :  2859 atoms
+  2 Protein-H           :  1479 atoms
+  3 C-alpha             :   180 atoms
+  4 Backbone            :   540 atoms
+  5 MainChain           :   719 atoms
+  6 MainChain+Cb        :   884 atoms
+  7 MainChain+H         :   896 atoms
+  8 SideChain           :  1963 atoms
+  9 SideChain-H         :   760 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+Removed group 5 'MainChain'
+Removed group 6 'MainChain+Cb'
+Removed group 7 'MainChain+H'
+Removed group 8 'SideChain'
+Removed group 9 'SideChain-H'
+Removed group 0 'System'
+Removed group 1 'Protein'
+Removed group 2 'Protein-H'
+Removed group 3 'C-alpha'
+
+> 
+
+> 
+Copied index group 0 'Backbone'
+Copied index group 1 'r_7_39_41_75_77_79_170_172_174_209_211_213'
+Merged two groups with AND: 540 143 -> 27
+
+> 
+
+> 
+
+  0 Backbone            :   540 atoms
+  1 r_7_39_41_75_77_79_170_172_174_209_211_213:   143 atoms
+  2 posres-custom       :    27 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 

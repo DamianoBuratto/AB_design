@@ -1,0 +1,88 @@
+2026-03-16 06:26:06,494 - INFO - ============================================================
+2026-03-16 06:26:06,494 - INFO - STEP 0: PDB Preprocessing
+2026-03-16 06:26:06,494 - INFO - ============================================================
+2026-03-16 06:26:06,514 - INFO - Processing PDB: design_373_dldesign_13_best.pdb
+2026-03-16 06:26:06,515 - INFO - Peptide sequence: HMTEVVRHC (9 residues)
+2026-03-16 06:26:06,518 - INFO - Found 3003 atoms in chain T
+2026-03-16 06:26:06,520 - INFO - Chain T contains 189 residues: 237-425
+2026-03-16 06:26:06,520 - INFO - Peptide: 9 residues → Chain P
+2026-03-16 06:26:06,520 - INFO - HLA: 180 residues → Chain A
+2026-03-16 06:26:06,527 - INFO - ✓ Preprocessed PDB written: processed.pdb
+2026-03-16 06:26:06,527 - INFO -   - Chain P (peptide): 9 residues
+2026-03-16 06:26:06,528 - INFO -   - Chain A (HLA): 180 residues
+2026-03-16 06:26:06,528 - INFO -   - All HIS converted to HSE
+2026-03-16 06:26:06,528 - INFO - ============================================================
+2026-03-16 06:26:06,528 - INFO - STEP 1: Generate Topology
+2026-03-16 06:26:06,528 - INFO - ============================================================
+2026-03-16 06:26:06,528 - INFO - Running: pdb2gmx
+2026-03-16 06:26:07,308 - INFO - ✓ pdb2gmx completed
+2026-03-16 06:26:07,309 - INFO - ============================================================
+2026-03-16 06:26:07,309 - INFO - STEP 1B: Generate HLA Position Restraints (Local Indices)
+2026-03-16 06:26:07,309 - INFO - ============================================================
+2026-03-16 06:26:07,309 - INFO - Isolating Chain A...
+2026-03-16 06:26:07,309 - INFO - Running: make_ndx_system
+2026-03-16 06:26:07,369 - INFO - ✓ make_ndx_system completed
+2026-03-16 06:26:07,369 - INFO - Running: extract_chain_A
+2026-03-16 06:26:07,426 - INFO - ✓ extract_chain_A completed
+2026-03-16 06:26:07,426 - INFO - Generating restraints on isolated chain_A_isolated.pdb...
+2026-03-16 06:26:07,426 - INFO - Running: make_ndx_local
+2026-03-16 06:26:07,472 - INFO - ✓ make_ndx_local completed
+2026-03-16 06:26:07,473 - INFO - Running: genrestr_hla
+2026-03-16 06:26:07,513 - INFO - ✓ genrestr_hla completed
+2026-03-16 06:26:07,514 - INFO - Adding restraints to topol_Protein_chain_A.itp...
+2026-03-16 06:26:07,515 - INFO - ============================================================
+2026-03-16 06:26:07,515 - INFO - STEP 2: Build Box
+2026-03-16 06:26:07,515 - INFO - ============================================================
+2026-03-16 06:26:07,515 - INFO - Running: editconf
+2026-03-16 06:26:07,579 - INFO - ✓ editconf completed
+2026-03-16 06:26:07,579 - INFO - ============================================================
+2026-03-16 06:26:07,579 - INFO - STEP 3: Solvate System
+2026-03-16 06:26:07,579 - INFO - ============================================================
+2026-03-16 06:26:07,579 - INFO - Running: solvate
+2026-03-16 06:26:08,229 - INFO - ✓ solvate completed
+2026-03-16 06:26:08,229 - INFO - ============================================================
+2026-03-16 06:26:08,229 - INFO - STEP 4: Add Ions
+2026-03-16 06:26:08,230 - INFO - ============================================================
+2026-03-16 06:26:08,230 - INFO - Running: grompp_ions
+2026-03-16 06:26:09,658 - INFO - ✓ grompp_ions completed
+2026-03-16 06:26:09,658 - INFO - Running: genion
+2026-03-16 06:26:09,821 - INFO - ✓ genion completed
+2026-03-16 06:26:09,821 - INFO - ============================================================
+2026-03-16 06:26:09,822 - INFO - STEP 5: Energy Minimization
+2026-03-16 06:26:09,822 - INFO - ============================================================
+2026-03-16 06:26:09,822 - INFO - Running: grompp_em
+2026-03-16 06:26:11,105 - INFO - ✓ grompp_em completed
+2026-03-16 06:26:11,105 - INFO - Running: mdrun_em
+2026-03-16 06:26:16,858 - INFO - ✓ mdrun_em completed
+2026-03-16 06:26:16,865 - INFO - ✓ Energy minimization completed
+2026-03-16 06:26:16,866 - INFO - Minimization status: Norm of force     =  3.1735788e+01
+2026-03-16 06:26:16,866 - INFO - ============================================================
+2026-03-16 06:26:16,866 - INFO - ✓ SYSTEM SETUP COMPLETED SUCCESSFULLY
+2026-03-16 06:26:16,866 - INFO - ============================================================
+2026-03-16 06:26:16,988 - INFO - ============================================================
+2026-03-16 06:26:16,988 - INFO - pHLA MD EQUILIBRATION
+2026-03-16 06:26:16,988 - INFO - Working directory: /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/setup
+2026-03-16 06:26:16,988 - INFO - Node: node22
+2026-03-16 06:26:16,988 - INFO - CUDA_VISIBLE_DEVICES: 0
+2026-03-16 06:26:16,988 - INFO - ============================================================
+2026-03-16 06:26:16,988 - INFO - ============================================================
+2026-03-16 06:26:16,988 - INFO - NVT EQUILIBRATION
+2026-03-16 06:26:16,988 - INFO - ============================================================
+2026-03-16 06:26:16,990 - INFO - Running: grompp_nvt
+2026-03-16 06:26:18,556 - INFO - ✓ grompp_nvt completed
+2026-03-16 06:26:18,556 - INFO - Running: mdrun_nvt
+2026-03-16 06:27:06,291 - INFO - ✓ mdrun_nvt completed
+2026-03-16 06:27:06,291 - INFO - ============================================================
+2026-03-16 06:27:06,291 - INFO - NPT EQUILIBRATION
+2026-03-16 06:27:06,291 - INFO - ============================================================
+2026-03-16 06:27:06,293 - INFO - Running: grompp_npt
+2026-03-16 06:27:07,935 - INFO - ✓ grompp_npt completed
+2026-03-16 06:27:07,935 - INFO - Running: mdrun_npt
+2026-03-16 06:28:48,222 - INFO - ✓ mdrun_npt completed
+2026-03-16 06:28:48,228 - INFO - ============================================================
+2026-03-16 06:28:48,228 - INFO - ✓ EQUILIBRATION COMPLETED SUCCESSFULLY
+2026-03-16 06:28:48,228 - INFO - ============================================================
+2026-03-16 06:28:48,228 - INFO - Output files in: /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/setup
+2026-03-16 06:28:48,229 - INFO -   - nvt.gro (NVT equilibrated)
+2026-03-16 06:28:48,229 - INFO -   - npt.gro (NPT equilibrated)
+2026-03-16 06:28:48,229 - INFO -   - state_npt.cpt (checkpoint for production)

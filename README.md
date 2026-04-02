@@ -144,39 +144,19 @@ Ctrl+A, D
 cd FEP
 
 # --- FORWARD ---
-# 1. Setup (forward only, ~5-10 min on HPC)
 #    Runs: GRO->PDB, pmx mutate, pdb2gmx, solvate, genion
 #    Produces: outputs/<DESIGN>/forward/bound_R1~R3 + unbound_R1~R3
 bash scripts/setup_fep.sh
-
-# 2. Submit forward jobs (6 SLURM jobs: bound/unbound x R1-R3)
+# Submit forward jobs (6 SLURM jobs: bound/unbound x R1-R3)
 bash scripts/submit_fep.sh
 
 # --- REVERSE (after forward PROD is complete) ---
-# 3. Manually extract last frame of lambda31 (ARG end-state) from each forward run.
-#    BOUND and UNBOUND have different atom counts - must be extracted separately.
-DESIGN=design_373_dldesign_13_best
-echo "0" | gmx trjconv \
-    -f outputs/${DESIGN}/forward/bound_R1/lambda31/PROD/prod.xtc \
-    -s outputs/${DESIGN}/forward/bound_R1/lambda31/PROD/prod.tpr \
-    -o rev_start_bound.gro -dump -1
+bash scripts/setup_fep.sh --direction reverse
 
-echo "0" | gmx trjconv \
-    -f outputs/${DESIGN}/forward/unbound_R1/lambda31/PROD/prod.xtc \
-    -s outputs/${DESIGN}/forward/unbound_R1/lambda31/PROD/prod.tpr \
-    -o rev_start_unbound.gro -dump -1
-
-# 4. Setup reverse: reuses forward hybrid topology; only starting GRO differs.
-#    --rev-gro and --rev-gro-unbound are required to place starting structures.
-bash scripts/setup_fep.sh --direction reverse \
-    --rev-gro  rev_start_bound.gro \
-    --rev-gro-unbound rev_start_unbound.gro
-
-# 5. Submit reverse jobs (6 SLURM jobs)
 bash scripts/submit_fep.sh reverse
 
 # --- ANALYSIS (after all PROD complete: forward + reverse) ---
-# 6. MBAR analysis -> ddG_results.txt + overlap/convergence plots
+# MBAR analysis -> ddG_results.txt + overlap/convergence plots
 conda activate fep_env
 python scripts/analyze_fep.py outputs/${DESIGN}
 ```

@@ -1,0 +1,1120 @@
+[node15:41816] mca_base_component_repository_open: unable to open mca_plm_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41816] mca_base_component_repository_open: unable to open mca_ras_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41826] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41824] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            node15
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+[node15:41822] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41826] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41826] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41824] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41824] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41823] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41830] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41825] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41833] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41828] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41822] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41822] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41831] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41827] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41823] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41823] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41835] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41828] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41828] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41831] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41831] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41833] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41833] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41829] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41830] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41830] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41825] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41825] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41837] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41827] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41827] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41836] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41839] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41832] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41835] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41838] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41835] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41845] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41829] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41829] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41841] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41837] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41837] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41842] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41848] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41834] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41840] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41849] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41832] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41836] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41839] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41836] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41832] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41839] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41838] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41857] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41838] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41845] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41845] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41854] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41855] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41859] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41853] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41856] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41852] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41834] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41834] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41841] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41841] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41842] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41848] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41842] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41848] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41858] mca_base_component_repository_open: unable to open mca_btl_usnic: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41857] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41857] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41840] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41840] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41849] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41849] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41855] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41855] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41854] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41854] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41859] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41859] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41853] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41853] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41856] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41852] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41856] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41852] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[node15:41858] mca_base_component_repository_open: unable to open mca_mtl_ofi: libfabric.so.1: cannot open shared object file: No such file or directory (ignored)
+[node15:41858] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+                      :-) GROMACS - gmx mdrun, 2023.2 (-:
+
+Executable:   /public/software/apps/gromacs/2023.2-mpi/bin/gmx_mpi
+Data prefix:  /public/software/apps/gromacs/2023.2-mpi
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound_R2
+Command line:
+  gmx_mpi mdrun -v -deffnm em_cg -multidir lambda0 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 lambda7 lambda8 lambda9 lambda10 lambda11 lambda12 lambda13 lambda14 lambda15 lambda16 lambda17 lambda18 lambda19 lambda20 lambda21 lambda22 lambda23 lambda24 lambda25 lambda26 lambda27 lambda28 lambda29 lambda30 lambda31 -gpu_id 01
+
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 18 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 3 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 27 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 29 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 19 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 20 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 14 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 31 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 23 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 28 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 4 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 0 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 2 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 15 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 30 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 13 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 1 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 16 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 26 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 7 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 10 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 17 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 9 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 25 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 11 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 12 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 24 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+
+This is simulation 5 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 21 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 6 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 8 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 22 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+   F-max             =  8.46530e+02 on atom 710
+   F-Norm            =  6.26097e+01
+
+   F-max             =  7.44914e+02 on atom 3667
+   F-Norm            =  6.31484e+01
+
+   F-max             =  8.57083e+02 on atom 6193
+   F-Norm            =  6.30885e+01
+
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+   F-max             =  8.92329e+02 on atom 5542
+   F-Norm            =  6.13602e+01
+
+   F-max             =  8.47861e+02 on atom 567
+   F-Norm            =  6.36281e+01
+   F-max             =  8.12039e+02 on atom 2737
+   F-Norm            =  6.31943e+01
+
+
+   F-max             =  9.03815e+02 on atom 4500
+   F-Norm            =  6.25726e+01
+
+   F-max             =  9.09206e+02 on atom 6018
+   F-Norm            =  6.31508e+01
+
+   F-max             =  1.17729e+03 on atom 4500
+   F-Norm            =  6.29811e+01
+
+   F-max             =  9.06316e+02 on atom 3339
+   F-Norm            =  6.35459e+01
+
+   F-max             =  9.35378e+02 on atom 3073
+   F-Norm            =  6.26419e+01
+
+   F-max             =  8.20418e+02 on atom 2147
+   F-Norm            =  6.24313e+01
+
+   F-max             =  9.10538e+02 on atom 2972
+   F-Norm            =  6.41093e+01
+
+   F-max             =  8.25299e+02 on atom 4564
+   F-Norm            =  6.24758e+01
+
+   F-max             =  7.95034e+02 on atom 3040
+   F-Norm            =  6.21089e+01
+
+   F-max             =  1.17782e+03 on atom 4500
+   F-Norm            =  6.29162e+01
+
+   F-max             =  1.13106e+03 on atom 4500
+   F-Norm            =  6.35454e+01
+
+   F-max             =  9.33841e+02 on atom 1369
+   F-Norm            =  6.34479e+01
+
+   F-max             =  8.70029e+02 on atom 1645
+   F-Norm            =  6.28254e+01
+
+   F-max             =  8.93014e+02 on atom 4505
+   F-Norm            =  6.34945e+01
+
+   F-max             =  7.48216e+02 on atom 5007
+   F-Norm            =  6.22212e+01
+
+   F-max             =  8.64004e+02 on atom 1539
+   F-max             =  8.40512e+02 on atom 2118
+   F-Norm            =  6.33035e+01
+
+   F-Norm            =  6.35856e+01
+
+   F-max             =  8.64600e+02 on atom 1159
+   F-Norm            =  6.23048e+01
+
+   F-max             =  1.01750e+03 on atom 1369
+   F-Norm            =  6.31459e+01
+
+   F-max             =  8.57195e+02 on atom 1369
+   F-Norm            =  6.29747e+01
+
+   F-max             =  7.96362e+02 on atom 2215
+   F-Norm            =  6.29037e+01
+
+   F-max             =  8.88799e+02 on atom 1130
+   F-Norm            =  6.27939e+01
+
+   F-max             =  8.66451e+02 on atom 4500
+   F-max             =  9.36444e+02 on atom 4501
+   F-Norm            =  6.24011e+01
+
+   F-Norm            =  6.40466e+01
+
+Step 0, Epot=-1.107316e+06, Fnorm=3.889e+01, Fmax=3.116e+02 (atom 4407)
+
+writing lowest energy coordinates.
+   F-max             =  8.37602e+02 on atom 2347
+   F-Norm            =  6.26191e+01
+
+Step 0, Epot=-1.100491e+06, Fnorm=3.988e+01, Fmax=2.783e+02 (atom 4556)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.105552e+06, Fnorm=3.930e+01, Fmax=2.904e+02 (atom 2137)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.108605e+06, Fnorm=3.839e+01, Fmax=2.829e+02 (atom 2013)
+
+writing lowest energy coordinates.
+   F-max             =  9.00214e+02 on atom 916
+Step 0, Epot=-1.102820e+06, Fnorm=3.946e+01, Fmax=2.994e+02 (atom 6306)
+   F-Norm            =  6.36106e+01
+
+writing lowest energy coordinates.
+
+Step 0, Epot=-1.107681e+06, Fnorm=3.928e+01, Fmax=3.027e+02 (atom 1322)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.096678e+06, Fnorm=4.020e+01, Fmax=3.111e+02 (atom 2394)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.109538e+06, Fnorm=3.880e+01, Fmax=2.853e+02 (atom 4314)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.106883e+06, Fnorm=3.910e+01, Fmax=3.424e+02 (atom 4947)
+Step 0, Epot=-1.105390e+06, Fnorm=3.953e+01, Fmax=2.986e+02 (atom 2302)
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.101280e+06, Fnorm=4.012e+01, Fmax=2.907e+02 (atom 1163)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.103105e+06, Fnorm=3.937e+01, Fmax=3.065e+02 (atom 4391)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.107991e+06, Fnorm=3.878e+01, Fmax=3.040e+02 (atom 3920)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.101422e+06, Fnorm=3.921e+01, Fmax=3.067e+02 (atom 5)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.106787e+06, Fnorm=3.871e+01, Fmax=2.936e+02 (atom 5361)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.105538e+06, Fnorm=3.950e+01, Fmax=3.050e+02 (atom 5333)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.106981e+06, Fnorm=3.906e+01, Fmax=2.747e+02 (atom 4367)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.101260e+06, Fnorm=3.952e+01, Fmax=2.920e+02 (atom 4013)
+Step 0, Epot=-1.103097e+06, Fnorm=3.964e+01, Fmax=3.074e+02 (atom 3194)
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.109325e+06, Fnorm=3.892e+01, Fmax=2.957e+02 (atom 1159)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1073160e+06
+Maximum force     =  3.1158829e+02 on atom 4407
+Norm of force     =  3.8887513e+01
+Step 0, Epot=-1.103870e+06, Fnorm=3.909e+01, Fmax=2.693e+02 (atom 1149)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.102051e+06, Fnorm=3.990e+01, Fmax=3.006e+02 (atom 383)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.102080e+06, Fnorm=3.979e+01, Fmax=2.934e+02 (atom 392)
+Step 0, Epot=-1.102935e+06, Fnorm=3.916e+01, Fmax=2.726e+02 (atom 163)
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.105932e+06, Fnorm=3.942e+01, Fmax=2.968e+02 (atom 1987)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.105502e+06, Fnorm=3.918e+01, Fmax=2.865e+02 (atom 1899)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1004910e+06
+Maximum force     =  2.7833743e+02 on atom 4556
+Norm of force     =  3.9877896e+01
+Step 0, Epot=-1.106873e+06, Fnorm=3.918e+01, Fmax=2.777e+02 (atom 2675)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.104654e+06, Fnorm=3.944e+01, Fmax=2.948e+02 (atom 2137)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.100498e+06, Fnorm=4.003e+01, Fmax=2.961e+02 (atom 5451)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.108352e+06, Fnorm=3.901e+01, Fmax=3.075e+02 (atom 5935)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1055521e+06
+Maximum force     =  2.9044800e+02 on atom 2137
+Norm of force     =  3.9303495e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1086050e+06
+Maximum force     =  2.8289883e+02 on atom 2013
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1028205e+06
+Maximum force     =  2.9944284e+02 on atom 6306
+Norm of force     =  3.9462068e+01
+Norm of force     =  3.8385545e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1076810e+06
+Maximum force     =  3.0269897e+02 on atom 1322
+Norm of force     =  3.9279640e+01
+Step 0, Epot=-1.107324e+06, Fnorm=3.875e+01, Fmax=3.104e+02 (atom 4407)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.0966784e+06
+Maximum force     =  3.1107269e+02 on atom 2394
+Norm of force     =  4.0196872e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1095381e+06
+Maximum force     =  2.8534543e+02 on atom 4314
+Norm of force     =  3.8797319e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1053904e+06
+Maximum force     =  2.9860034e+02 on atom 2302
+Norm of force     =  3.9527763e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1068830e+06
+Maximum force     =  3.4239734e+02 on atom 4947
+Norm of force     =  3.9099114e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1012798e+06
+Maximum force     =  2.9068137e+02 on atom 1163
+Norm of force     =  4.0117873e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1031048e+06
+Maximum force     =  3.0649527e+02 on atom 4391
+Norm of force     =  3.9365272e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1079911e+06
+Maximum force     =  3.0403836e+02 on atom 3920
+Norm of force     =  3.8776351e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1014220e+06
+Maximum force     =  3.0666364e+02 on atom 5
+Norm of force     =  3.9206838e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1067870e+06
+Maximum force     =  2.9359998e+02 on atom 5361
+Norm of force     =  3.8705074e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1055381e+06
+Maximum force     =  3.0503265e+02 on atom 5333
+Norm of force     =  3.9498183e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1069806e+06
+Maximum force     =  2.7467520e+02 on atom 4367
+Norm of force     =  3.9055135e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1030968e+06
+Maximum force     =  3.0738925e+02 on atom 3194
+Norm of force     =  3.9636824e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1012596e+06
+Maximum force     =  2.9198831e+02 on atom 4013
+Norm of force     =  3.9522298e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1093248e+06
+Maximum force     =  2.9568607e+02 on atom 1159
+Norm of force     =  3.8921858e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1038702e+06
+Maximum force     =  2.6932211e+02 on atom 1149
+Norm of force     =  3.9093652e+01
+Step 0, Epot=-1.105923e+06, Fnorm=3.950e+01, Fmax=2.938e+02 (atom 5697)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1020506e+06
+Maximum force     =  3.0061850e+02 on atom 383
+Norm of force     =  3.9898743e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1029349e+06
+Maximum force     =  2.7261273e+02 on atom 163
+Norm of force     =  3.9160864e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1020801e+06
+Maximum force     =  2.9336432e+02 on atom 392
+Norm of force     =  3.9793424e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1059315e+06
+Maximum force     =  2.9682718e+02 on atom 1987
+Norm of force     =  3.9423566e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1055021e+06
+Maximum force     =  2.8645834e+02 on atom 1899
+Norm of force     =  3.9177216e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1068729e+06
+Maximum force     =  2.7773871e+02 on atom 2675
+Norm of force     =  3.9181282e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1046540e+06
+Maximum force     =  2.9481653e+02 on atom 2137
+Norm of force     =  3.9444899e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1083518e+06
+Maximum force     =  3.0747519e+02 on atom 5935
+Norm of force     =  3.9010832e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1004981e+06
+Maximum force     =  2.9612695e+02 on atom 5451
+Norm of force     =  4.0034907e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1073242e+06
+Maximum force     =  3.1040082e+02 on atom 4407
+Norm of force     =  3.8751977e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1059231e+06
+Maximum force     =  2.9381784e+02 on atom 5697
+Norm of force     =  3.9503638e+01
+
+GROMACS reminds you: "It Costs Too Much If It Costs a Lot" (Magnapop)
+
+[node15:41816] 31 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[node15:41816] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
