@@ -1,0 +1,12 @@
+FEP ΔΔG_binding Analysis Results (MBAR)
+======================================================================
+
+Directory:   /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best
+Temperature: 310 K
+Skip:        10.0%
+kBT:         2.5773 kJ/mol
+
+ΔG_bound    = -946.627 ± 0.478 kJ/mol  (-226.249 ± 0.114 kcal/mol)
+ΔG_unbound  = -948.013 ± 0.521 kJ/mol  (-226.580 ± 0.125 kcal/mol)
+
+ΔΔG_binding = +1.386 ± 0.707 kJ/mol  (+0.331 ± 0.169 kcal/mol)

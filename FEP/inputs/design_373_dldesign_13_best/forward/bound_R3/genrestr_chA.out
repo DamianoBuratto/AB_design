@@ -1,0 +1,18 @@
+                     :-) GROMACS - gmx genrestr, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound
+Command line:
+  gmx genrestr -f temp_posres_chA.pdb -n index_posres_chA.ndx -fc 200 200 200 -o posre_custom_chA.itp
+
+
+Reading structure file
+Group     0 (       Backbone) has   540 elements
+Group     1 (r_7_39_41_75_77_79_170_172_174_209_211_213) has   143 elements
+Group     2 (  posres-custom) has    27 elements
+Select a group: 
+GROMACS reminds you: "C has the power of assembly language and the convenience of... assembly language." (Dennis Ritchie)
+
+Select group to position restrain
+Selected 2: 'posres-custom'

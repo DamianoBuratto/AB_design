@@ -1,0 +1,1031 @@
+[node27:50126] mca_base_component_repository_open: unable to open mca_plm_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+[node27:50126] mca_base_component_repository_open: unable to open mca_ras_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            node27
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   node27
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2023.2 (-:
+
+Executable:   /public/software/apps/gromacs/2023.2-mpi/bin/gmx_mpi
+Data prefix:  /public/software/apps/gromacs/2023.2-mpi
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/unbound_R2
+Command line:
+  gmx_mpi mdrun -v -deffnm em_cg -multidir lambda0 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 lambda7 lambda8 lambda9 lambda10 lambda11 lambda12 lambda13 lambda14 lambda15 lambda16 lambda17 lambda18 lambda19 lambda20 lambda21 lambda22 lambda23 lambda24 lambda25 lambda26 lambda27 lambda28 lambda29 lambda30 lambda31 -gpu_id 01
+
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+Reading file em_cg.tpr, VERSION 2023.2 (single precision)
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 19 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 6 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 18 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 15 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 23 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 28 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 26 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 30 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 0 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 29 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 16 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 13 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 3 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 10 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 21 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 8 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 5 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 31 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 27 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 11 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 17 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 7 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 4 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 2 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 25 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 22 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+This is simulation 20 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 1 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 14 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 24 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 9 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 12 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+   F-max             =  9.20510e+02 on atom 604
+   F-Norm            =  5.02474e+01
+
+
+Polak-Ribiere Conjugate Gradients:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+   F-max             =  8.27143e+02 on atom 184
+   F-Norm            =  5.01329e+01
+
+   F-max             =  8.53085e+02 on atom 1522
+   F-Norm            =  4.95593e+01
+
+   F-max             =  8.78901e+02 on atom 2288
+   F-Norm            =  5.00013e+01
+
+   F-max             =  8.22914e+02 on atom 212
+   F-Norm            =  5.01668e+01
+
+   F-max             =  9.04139e+02 on atom 1522
+   F-Norm            =  4.99001e+01
+
+   F-max             =  8.69701e+02 on atom 1522
+   F-Norm            =  4.96625e+01
+
+   F-max             =  1.09333e+03 on atom 1522
+   F-Norm            =  5.09136e+01
+
+   F-max             =  7.11844e+02 on atom 817
+   F-Norm            =  4.90821e+01
+
+   F-max             =  7.50159e+02 on atom 515
+   F-Norm            =  4.96212e+01
+
+   F-max             =  1.05894e+03 on atom 1522
+   F-Norm            =  5.08676e+01
+
+   F-max             =  7.93321e+02 on atom 1421
+   F-Norm            =  5.01344e+01
+
+   F-max             =  8.24235e+02 on atom 2880
+   F-Norm            =  4.90999e+01
+
+   F-max             =  7.64065e+02 on atom 253
+   F-Norm            =  4.92555e+01
+
+   F-max             =  8.26717e+02 on atom 784
+   F-Norm            =  5.07043e+01
+
+   F-max             =  9.21471e+02 on atom 604
+   F-Norm            =  5.03248e+01
+
+   F-max             =  8.94199e+02 on atom 1522
+   F-Norm            =  5.03035e+01
+
+   F-max             =  8.46527e+02 on atom 1522
+   F-Norm            =  5.00957e+01
+
+   F-max             =  8.85568e+02 on atom 1522
+   F-Norm            =  5.02042e+01
+
+   F-max             =  1.16885e+03 on atom 1522
+   F-Norm            =  5.08271e+01
+
+   F-max             =  9.25351e+02 on atom 604
+   F-Norm            =  5.02133e+01
+
+Step 0, Epot=-1.145768e+06, Fnorm=3.272e+01, Fmax=2.524e+02 (atom 1559)
+
+writing lowest energy coordinates.
+   F-max             =  7.71703e+02 on atom 1777
+   F-Norm            =  5.04460e+01
+
+   F-max             =  9.30151e+02 on atom 1522
+   F-max             =  7.51365e+02 on atom 1123
+   F-Norm            =  5.09373e+01
+
+   F-max             =  1.00530e+03 on atom 2726
+   F-Norm            =  5.02415e+01
+
+   F-Norm            =  5.07442e+01
+
+   F-max             =  8.72394e+02 on atom 2288
+   F-Norm            =  5.04187e+01
+
+   F-max             =  9.70628e+02 on atom 2044
+   F-Norm            =  5.03354e+01
+
+   F-max             =  9.45583e+02 on atom 604
+   F-Norm            =  4.99732e+01
+
+   F-max             =  9.33748e+02 on atom 1522
+   F-Norm            =  5.13000e+01
+
+   F-max             =  7.28194e+02 on atom 762
+   F-Norm            =  5.04982e+01
+
+Step 0, Epot=-1.142470e+06, Fnorm=3.298e+01, Fmax=2.207e+02 (atom 2671)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.141194e+06, Fnorm=3.312e+01, Fmax=2.350e+02 (atom 901)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.142027e+06, Fnorm=3.279e+01, Fmax=2.360e+02 (atom 2741)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.144595e+06, Fnorm=3.285e+01, Fmax=2.275e+02 (atom 755)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.145079e+06, Fnorm=3.257e+01, Fmax=2.140e+02 (atom 2162)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.146892e+06, Fnorm=3.243e+01, Fmax=2.425e+02 (atom 218)
+
+writing lowest energy coordinates.
+   F-max             =  8.26161e+02 on atom 1686
+   F-Norm            =  5.02943e+01
+
+   F-max             =  8.54163e+02 on atom 2792
+   F-Norm            =  5.00125e+01
+
+Step 0, Epot=-1.143930e+06, Fnorm=3.320e+01, Fmax=2.351e+02 (atom 1002)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.146028e+06, Fnorm=3.243e+01, Fmax=2.323e+02 (atom 216)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.145195e+06, Fnorm=3.251e+01, Fmax=2.712e+02 (atom 2680)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.136014e+06, Fnorm=3.365e+01, Fmax=2.251e+02 (atom 2105)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.143712e+06, Fnorm=3.260e+01, Fmax=2.132e+02 (atom 1007)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.145940e+06, Fnorm=3.232e+01, Fmax=2.032e+02 (atom 1760)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.138823e+06, Fnorm=3.361e+01, Fmax=2.505e+02 (atom 1531)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.144085e+06, Fnorm=3.267e+01, Fmax=2.241e+02 (atom 1548)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1424699e+06
+Maximum force     =  2.2069534e+02 on atom 2671
+Norm of force     =  3.2981350e+01
+Step 0, Epot=-1.145946e+06, Fnorm=3.268e+01, Fmax=2.502e+02 (atom 2622)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.144586e+06, Fnorm=3.286e+01, Fmax=2.476e+02 (atom 788)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.138999e+06, Fnorm=3.360e+01, Fmax=2.154e+02 (atom 1481)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.144951e+06, Fnorm=3.265e+01, Fmax=2.236e+02 (atom 2772)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1457685e+06
+Maximum force     =  2.5241046e+02 on atom 1559
+Norm of force     =  3.2716424e+01
+Step 0, Epot=-1.140918e+06, Fnorm=3.344e+01, Fmax=2.181e+02 (atom 1591)
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1420271e+06
+Maximum force     =  2.3596458e+02 on atom 2741
+Norm of force     =  3.2794940e+01
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.145890e+06, Fnorm=3.257e+01, Fmax=2.123e+02 (atom 98)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1445951e+06
+Maximum force     =  2.2753142e+02 on atom 755
+Norm of force     =  3.2846372e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1450788e+06
+Maximum force     =  2.1404942e+02 on atom 2162
+Norm of force     =  3.2565452e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1468918e+06
+Maximum force     =  2.4250012e+02 on atom 218
+Norm of force     =  3.2429041e+01
+Step 0, Epot=-1.140766e+06, Fnorm=3.292e+01, Fmax=2.729e+02 (atom 1187)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.141969e+06, Fnorm=3.290e+01, Fmax=2.351e+02 (atom 2889)
+Step 0, Epot=-1.140867e+06, Fnorm=3.345e+01, Fmax=2.786e+02 (atom 1187)
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.135730e+06, Fnorm=3.352e+01, Fmax=2.319e+02 (atom 1597)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.145592e+06, Fnorm=3.264e+01, Fmax=2.089e+02 (atom 2976)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.137550e+06, Fnorm=3.373e+01, Fmax=2.458e+02 (atom 2013)
+
+writing lowest energy coordinates.
+Step 0, Epot=-1.136838e+06, Fnorm=3.331e+01, Fmax=2.256e+02 (atom 55)
+Step 0, Epot=-1.138748e+06, Fnorm=3.375e+01, Fmax=2.492e+02 (atom 1862)
+
+writing lowest energy coordinates.
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1411938e+06
+Maximum force     =  2.3497011e+02 on atom 901
+Norm of force     =  3.3123353e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1439302e+06
+Maximum force     =  2.3510229e+02 on atom 1002
+Norm of force     =  3.3202510e+01
+Step 0, Epot=-1.142746e+06, Fnorm=3.291e+01, Fmax=2.210e+02 (atom 398)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1360140e+06
+Maximum force     =  2.2508633e+02 on atom 2105
+Norm of force     =  3.3654284e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1451948e+06
+Maximum force     =  2.7120981e+02 on atom 2680
+Norm of force     =  3.2507184e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1437118e+06
+Maximum force     =  2.1323679e+02 on atom 1007
+Norm of force     =  3.2597800e+01
+Step 0, Epot=-1.145035e+06, Fnorm=3.282e+01, Fmax=2.136e+02 (atom 2772)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1459398e+06
+Maximum force     =  2.0321896e+02 on atom 1760
+Norm of force     =  3.2316059e+01
+Step 0, Epot=-1.139010e+06, Fnorm=3.360e+01, Fmax=2.190e+02 (atom 2786)
+
+writing lowest energy coordinates.
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1388231e+06
+Maximum force     =  2.5047517e+02 on atom 1531
+Norm of force     =  3.3610665e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1440849e+06
+Maximum force     =  2.2408524e+02 on atom 1548
+Norm of force     =  3.2674304e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1460275e+06
+Maximum force     =  2.3229515e+02 on atom 216
+Norm of force     =  3.2431072e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1445855e+06
+Maximum force     =  2.4755804e+02 on atom 788
+Norm of force     =  3.2860285e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1389989e+06
+Maximum force     =  2.1539340e+02 on atom 1481
+Norm of force     =  3.3598070e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1449508e+06
+Maximum force     =  2.2364984e+02 on atom 2772
+Norm of force     =  3.2652070e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1459461e+06
+Maximum force     =  2.5015778e+02 on atom 2622
+Norm of force     =  3.2683171e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1409184e+06
+Maximum force     =  2.1812473e+02 on atom 1591
+Norm of force     =  3.3442561e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1407662e+06
+Maximum force     =  2.7286212e+02 on atom 1187
+Norm of force     =  3.2923806e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1408669e+06
+Maximum force     =  2.7855872e+02 on atom 1187
+Norm of force     =  3.3451583e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1419686e+06
+Maximum force     =  2.3512224e+02 on atom 2889
+Norm of force     =  3.2901576e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1357298e+06
+Maximum force     =  2.3194333e+02 on atom 1597
+Norm of force     =  3.3521024e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1368375e+06
+Maximum force     =  2.2560298e+02 on atom 55
+Norm of force     =  3.3312086e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1387485e+06
+Maximum force     =  2.4923367e+02 on atom 1862
+Norm of force     =  3.3752720e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1375502e+06
+Maximum force     =  2.4580705e+02 on atom 2013
+Norm of force     =  3.3725064e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1458896e+06
+Maximum force     =  2.1234283e+02 on atom 98
+Norm of force     =  3.2565832e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1455918e+06
+Maximum force     =  2.0890019e+02 on atom 2976
+Norm of force     =  3.2636853e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1427458e+06
+Maximum force     =  2.2097838e+02 on atom 398
+Norm of force     =  3.2913902e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1450354e+06
+Maximum force     =  2.1357503e+02 on atom 2772
+Norm of force     =  3.2817132e+01
+
+Polak-Ribiere Conjugate Gradients converged to Fmax < 700 in 0 steps
+Potential Energy  = -1.1390102e+06
+Maximum force     =  2.1900377e+02 on atom 2786
+Norm of force     =  3.3603146e+01
+[node27:50126] 31 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[node27:50126] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[node27:50126] 31 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+
+GROMACS reminds you: "Good Music Saves your Soul" (Lemmy)
+

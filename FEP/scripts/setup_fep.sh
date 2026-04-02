@@ -51,7 +51,7 @@ POSRE_RESIDUES="7 39 41 75 77 79 170 172 174 209 211 213"
 # --- Ions (must match original MD setup) ---
 ION_POS="K"
 ION_NEG="CL"
-ION_CONC=0.15    # M
+ION_CONC=0.10   
 
 # --- Chains to remove for UNBOUND state (antibody H+L) ---
 CHAINS_TO_REMOVE="H L"

@@ -1,0 +1,55 @@
+                     :-) GROMACS - gmx solvate, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/unbound
+Command line:
+  gmx solvate -cp pHLA_forw_mutated_ff_box.pdb -cs spc216.gro -o pHLA_forw_mutated_ff_water.gro -p topol_hybrid.top
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 7x5x4 boxes
+Solvent box contains 76812 atoms in 25604 residues
+Removed 9510 solvent atoms due to solvent-solvent overlap
+Removed 2916 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms): 21462 residues
+Generated solvent containing 64386 atoms in 21462 residues
+Writing generated configuration to pHLA_forw_mutated_ff_water.gro
+
+Output configuration contains 67410 atoms in 21651 residues
+Volume                 :     693.586 (nm^3)
+Density                :     982.032 (g/l)
+Number of solvent molecules:  21462   
+
+Processing topology
+
+Back Off! I just backed up topol_hybrid.top to ./#topol_hybrid.top.1#
+
+GROMACS reminds you: "Science is a way of thinking much more than it is a body of knowledge." (Carl Sagan)
+
+Adding line for 21462 solvent molecules with resname (SOL) to topology file (topol_hybrid.top)
