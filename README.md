@@ -98,6 +98,8 @@ bash batch_compute_rmsd.sh
 | `scripts_charmm/run_equilibration_charmm.py` | NVT + NPT equilibration |
 | `scripts_charmm/run_production_charmm.py` | Production MD (3 replicas × 150 ns each) |
 | `scripts_charmm/batch_submit_charmm.py` | Generate SLURM scripts only (no submission) |
+| `scripts_charmm/Analysis.ipynb` | Per-system trajectory analysis: antibody + CDR backbone RMSD, plots and CSVs |
+| `scripts_charmm/batch_analysis.py` | Batch RMSD analysis across all designs → master summary CSV |
 
 ### Command Flow
 
@@ -116,6 +118,15 @@ python3 scripts_charmm/auto_submit_charmm.py \
     >> auto_submit.log 2>&1
 
 Ctrl+A, D 
+
+# 3. Analysis
+conda activate pHLA_MD_env
+
+python3 scripts_charmm/batch_analysis.py \
+    --base-dir /public/home/xuziyi/MD/results \
+    > batch_analysis.log 2>&1 &
+#    Output: /public/home/xuziyi/MD/results/batch_summary/master_rmsd_summary.csv
+#    Per-system interactive: open Analysis.ipynb → set BASE_DIR / SYSTEM_NAME → Run All
 ```
 
 ---

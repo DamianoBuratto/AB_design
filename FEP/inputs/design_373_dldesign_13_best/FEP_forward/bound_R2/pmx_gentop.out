@@ -1,0 +1,55 @@
+
+log_> Reading input top file "topol.top"
+log_> Making bonds for state B -> 0 bonds with perturbed atoms
+log_> Making angles for state B -> 0 angles with perturbed atoms
+log_> Making dihedrals for state B -> 0 dihedrals with perturbed atoms
+log_> Removed 0 fake dihedrals
+log_> Total charge of state A = 0
+log_> Total charge of state B = 0
+
+log_> Reading input itp file "topol_Protein_chain_P.itp""
+log_> Scanning database for X2R 
+log_> Hybrid Residue -> 8 | X2R 
+log_> Making bonds for state B -> 34 bonds with perturbed atoms
+log_> Making angles for state B -> 63 angles with perturbed atoms
+log_> Making dihedrals for state B -> 74 dihedrals with perturbed atoms
+log_> Removed 5 fake dihedrals
+log_> Total charge of state A = -0
+log_> Total charge of state B = 1
+
+log_> Reading input itp file "topol_Protein_chain_A.itp""
+log_> Making bonds for state B -> 0 bonds with perturbed atoms
+log_> Making angles for state B -> 0 angles with perturbed atoms
+log_> Making dihedrals for state B -> 0 dihedrals with perturbed atoms
+log_> Removed 0 fake dihedrals
+log_> Total charge of state A = -2
+log_> Total charge of state B = -2
+
+log_> Reading input itp file "topol_Protein_chain_H.itp""
+log_> Making bonds for state B -> 0 bonds with perturbed atoms
+log_> Making angles for state B -> 0 angles with perturbed atoms
+log_> Making dihedrals for state B -> 0 dihedrals with perturbed atoms
+log_> Removed 0 fake dihedrals
+log_> Total charge of state A = -2
+log_> Total charge of state B = -2
+
+log_> Reading input itp file "topol_Protein_chain_L.itp""
+log_> Making bonds for state B -> 0 bonds with perturbed atoms
+log_> Making angles for state B -> 0 angles with perturbed atoms
+log_> Making dihedrals for state B -> 0 dihedrals with perturbed atoms
+log_> Removed 0 fake dihedrals
+log_> Total charge of state A = 2
+log_> Total charge of state B = 2
+
+log_> Writing itp file "/public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound/pmx_topol_Protein_chain_P.itp""
+
+log_> Writing itp file "/public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound/pmx_topol_Protein_chain_A.itp""
+
+log_> Writing itp file "/public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound/pmx_topol_Protein_chain_H.itp""
+
+log_> Writing itp file "/public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound/pmx_topol_Protein_chain_L.itp""
+
+log_> Writing topology file "topol_hybrid.top""
+
+b-states filled...........
+

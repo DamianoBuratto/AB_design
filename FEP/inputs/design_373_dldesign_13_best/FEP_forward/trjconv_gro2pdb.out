@@ -1,0 +1,43 @@
+                     :-) GROMACS - gmx trjconv, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward
+Command line:
+  gmx trjconv -f /public/home/xuziyi/FEP/inputs/design_373_dldesign_13_best/replica_1/md_r1.gro -s /public/home/xuziyi/FEP/inputs/design_373_dldesign_13_best/replica_1/md_r1.tpr -o bound_forw_structure_raw.pdb
+
+Will write pdb: Protein data bank file
+Reading file /public/home/xuziyi/FEP/inputs/design_373_dldesign_13_best/replica_1/md_r1.tpr, VERSION 2024.2 (single precision)
+Reading file /public/home/xuziyi/FEP/inputs/design_373_dldesign_13_best/replica_1/md_r1.tpr, VERSION 2024.2 (single precision)
+Group     0 (         System) has 78773 elements
+Group     1 (        Protein) has  6504 elements
+Group     2 (      Protein-H) has  3325 elements
+Group     3 (        C-alpha) has   425 elements
+Group     4 (       Backbone) has  1275 elements
+Group     5 (      MainChain) has  1696 elements
+Group     6 (   MainChain+Cb) has  2078 elements
+Group     7 (    MainChain+H) has  2115 elements
+Group     8 (      SideChain) has  4389 elements
+Group     9 (    SideChain-H) has  1629 elements
+Group    10 (    Prot-Masses) has  6504 elements
+Group    11 (    non-Protein) has 72269 elements
+Group    12 (          Water) has 72171 elements
+Group    13 (            SOL) has 72171 elements
+Group    14 (      non-Water) has  6602 elements
+Group    15 (            Ion) has    98 elements
+Group    16 ( Water_and_ions) has 72269 elements
+Select a group: Reading frames from gro file 'Protein in water', 78773 atoms.
+Reading frame       0 time    0.000   
+Precision of /public/home/xuziyi/FEP/inputs/design_373_dldesign_13_best/replica_1/md_r1.gro is 0.001 (nm)
+
+Back Off! I just backed up bound_forw_structure_raw.pdb to ./#bound_forw_structure_raw.pdb.1#
+Last frame          0 time    0.000   
+ ->  frame      0 time    0.000      
+Last written: frame      0 time    0.000
+
+
+GROMACS reminds you: "I always think there is something foreign about jolly phrases at breakfast." (Mr. Carson in Downtown Abbey)
+
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+Select group for output
+Selected 0: 'System'

@@ -1,0 +1,320 @@
+                     :-) GROMACS - gmx pdb2gmx, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward
+Command line:
+  gmx pdb2gmx -f bound_forw_structure.pdb -o bound_forw_structure_ff.pdb -ignh -ff charmm36m-mut -water tip3p -his
+
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.r2b
+All occupancies are one
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/atomtypes.atp
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.rtp
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/mutres.rtp
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/mutres_dna.rtp
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.hdb
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.n.tdb
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.c.tdb
+Using the Charmm36m-mut force field in directory /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff
+
+going to rename /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.r2b
+Reading bound_forw_structure.pdb...
+Read '', 3325 atoms
+
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+
+There are 4 chains and 0 blocks of water and 425 residues with 3325 atoms
+
+  chain  #res #atoms
+
+  1 'P'     9     76  
+
+  2 'A'   180   1479  
+
+  3 'H'   123    898  
+
+  4 'L'   113    872  
+
+All occupancies are one
+
+Reading residue database... (Charmm36m-mut)
+
+Processing chain 1 'P' (76 atoms, 9 residues)
+Which HISTIDINE type do you want for residue 1
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 8
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:8 out of 8 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                   HISE1    MET2   HISE8
+                    NE27    SD15   NE266
+    MET2    SD15   1.057
+   HISE8   NE266   2.561   1.798
+    CYS9    SG73   2.576   1.688   0.888
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.arn
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/mutres.arn
+Before cleaning: 375 pairs
+Before cleaning: 385 dihedrals
+
+Identified residue HISE1 as a starting terminus.
+
+Identified residue CYS9 as a ending terminus.
+Start terminus HISE-1: NH3+
+End terminus CYS-9: COO-
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 9 residues with 150 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 151, now 151
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are    7 cmap torsion pairs
+
+There are  385 dihedrals,   33 impropers,  269 angles
+           375 pairs,      151 bonds and     0 virtual sites
+
+Total mass 1111.307 a.m.u.
+
+Total charge 0.000 e
+
+Writing topology
+
+Processing chain 2 'A' (1479 atoms, 180 residues)
+Which HISTIDINE type do you want for residue 3
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 70
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 74
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 93
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 114
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 145
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:Which HISTIDINE type do you want for residue 151
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:8 out of 8 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                   HISE3    MET5   MET45  HISE70  HISE74  HISE93   MET98
+                   NE217    SD31   SD358  NE2571  NE2603  NE2752   SD794
+    MET5    SD31   1.429
+   MET45   SD358   2.510   1.142
+  HISE70  NE2571   2.857   1.486   1.110
+  HISE74  NE2603   2.940   1.738   1.533   1.101
+  HISE93  NE2752   3.996   3.019   2.778   2.477   1.429
+   MET98   SD794   1.804   0.979   1.677   1.465   1.240   2.375
+  CYS101   SG817   1.306   0.651   1.670   1.648   1.998   3.297   0.981
+ HISE114  NE2930   2.487   1.353   1.577   0.798   1.012   2.341   0.878
+  MET138  SD1128   4.042   3.392   3.698   2.796   2.371   2.523   2.487
+ HISE145 NE21180   4.193   3.257   3.318   2.226   2.338   2.957   2.626
+ HISE151 NE21232   3.213   2.335   2.554   1.633   2.369   3.591   2.147
+  CYS164  SG1333   1.624   0.548   1.341   1.302   1.792   3.159   1.007
+                  CYS101 HISE114  MET138 HISE145 HISE151
+                   SG817  NE2930  SD1128 NE21180 NE21232
+ HISE114  NE2930   1.296
+  MET138  SD1128   3.163   2.207
+ HISE145 NE21180   3.020   1.929   1.389
+ HISE151 NE21232   1.972   1.460   2.537   1.618
+  CYS164  SG1333   0.390   1.101   3.157   2.886   1.820
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.arn
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/mutres.arn
+Before cleaning: 7506 pairs
+Before cleaning: 7596 dihedrals
+
+Identified residue GLY1 as a starting terminus.
+
+Identified residue GLN180 as a ending terminus.
+Start terminus GLY-1: GLY-NH3+
+End terminus GLN-180: COO-
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 180 residues with 2859 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 2900, now 2900
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are  178 cmap torsion pairs
+
+There are 7596 dihedrals,  526 impropers, 5168 angles
+          7434 pairs,     2900 bonds and     0 virtual sites
+
+Total mass 20927.175 a.m.u.
+
+Total charge -2.000 e
+
+Writing topology
+
+Processing chain 3 'H' (898 atoms, 123 residues)
+Which HISTIDINE type do you want for residue 35
+0. H on ND1 only (HSD)
+1. H on NE2 only (HSE)
+2. H on ND1 and NE2 (HSP)
+3. Coupled to Heme (HSD)
+
+Type a number:8 out of 8 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                   CYS22   MET34  HISE35   MET83
+                   SG149   SD228  NE2238   SD612
+   MET34   SD228   0.751
+  HISE35  NE2238   1.170   0.830
+   MET83   SD612   1.368   1.713   1.773
+   CYS96   SG717   0.210   0.721   0.995   1.304
+Linking CYS-22 SG-149 and CYS-96 SG-717...
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.arn
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/mutres.arn
+Before cleaning: 4606 pairs
+Before cleaning: 4641 dihedrals
+8 out of 8 lines of specbond.dat converted successfully
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/merged.arn
+Opening force field file /public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/mutres.arn
+Before cleaning: 4614 pairs
+Before cleaning: 4649 dihedrals
+
+GROMACS reminds you: "A good sign these days when you're listening to someone talk about this epidemic is the number of times they say 'We don't know yet'. The more of those, the better." (Derek Lowe)
+
+
+Identified residue GLU1 as a starting terminus.
+
+Identified residue SER123 as a ending terminus.
+Start terminus GLU-1: NH3+
+End terminus SER-123: COO-
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 123 residues with 1756 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 1775, now 1775
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are  121 cmap torsion pairs
+
+There are 4641 dihedrals,  305 impropers, 3180 angles
+          4570 pairs,     1775 bonds and     0 virtual sites
+
+Total mass 12764.135 a.m.u.
+
+Total charge -2.000 e
+
+Writing topology
+
+Processing chain 4 'L' (872 atoms, 113 residues)
+
+Identified residue ASP124 as a starting terminus.
+
+Identified residue VAL236 as a ending terminus.
+Start terminus ASP-124: NH3+
+End terminus VAL-236: COO-
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 113 residues with 1739 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 1756, now 1756
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are  111 cmap torsion pairs
+
+There are 4649 dihedrals,  289 impropers, 3166 angles
+          4581 pairs,     1756 bonds and     0 virtual sites
+
+Total mass 12358.894 a.m.u.
+
+Total charge 2.000 e
+
+Writing topology
+
+Including chain 1 in system: 150 atoms 9 residues
+
+Including chain 2 in system: 2859 atoms 180 residues
+
+Including chain 3 in system: 1756 atoms 123 residues
+
+Including chain 4 in system: 1739 atoms 113 residues
+
+Now there are 6504 atoms and 425 residues
+
+Total mass in system 47161.510 a.m.u.
+
+Total charge in system -2.000 e
+
+Writing coordinate file...
+
+		--------- PLEASE NOTE ------------
+
+You have successfully generated a topology from: bound_forw_structure.pdb.
+
+The Charmm36m-mut force field and the tip3p water model are used.
+
+		--------- ETON ESAELP ------------

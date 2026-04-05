@@ -1,0 +1,48 @@
+                     :-) GROMACS - gmx editconf, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound
+Command line:
+  gmx editconf -f structure_forw_mutated_ff.pdb -o structure_forw_mutated_ff_box.pdb -d 1.2 -bt triclinic -c -princ
+
+
+Select group for the determining the orientation
+Group     0 (         System) has  6519 elements
+Group     1 (        Protein) has  6519 elements
+Group     2 (      Protein-H) has  3331 elements
+Group     3 (        C-alpha) has   425 elements
+Group     4 (       Backbone) has  1275 elements
+Group     5 (      MainChain) has  1696 elements
+Group     6 (   MainChain+Cb) has  2078 elements
+Group     7 (    MainChain+H) has  2115 elements
+Group     8 (      SideChain) has  4404 elements
+Group     9 (    SideChain-H) has  1635 elements
+Select a group: 
+GROMACS reminds you: "Given enough eyeballs, all bugs are shallow." (Linus Torvalds, on the power of open source)
+
+Note that major changes are planned in future for editconf, to improve usability and utility.
+Read 6519 atoms
+No velocities found
+    system size :  6.371  6.408  7.639 (nm)
+    center      :  4.520  4.461  5.181 (nm)
+    box vectors :  0.000  0.000  0.000 (nm)
+    box angles  :   0.00   0.00   0.00 (degrees)
+    box volume  :   0.00               (nm^3)
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+Selected 1: 'Protein'
+new system size :  8.998  6.088  4.769
+    shift       :  1.193 -0.218 -1.585 (nm)
+new center      :  5.699  4.244  3.585 (nm)
+new box vectors : 11.398  8.488  7.169 (nm)
+new box angles  :  90.00  90.00  90.00 (degrees)
+new box volume  : 693.58               (nm^3)

@@ -1,0 +1,167 @@
+                      :-) GROMACS - gmx genion, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound
+Command line:
+  gmx genion -s structure_forw_mutated_ff_ions.tpr -o structure_forw_mutated_ff_ions.gro -p topol_hybrid.top -nname CL -pname K -neutral -conc 0.15
+
+Reading file structure_forw_mutated_ff_ions.tpr, VERSION 2024.2 (single precision)
+Reading file structure_forw_mutated_ff_ions.tpr, VERSION 2024.2 (single precision)
+Group     0 (         System) has 67557 elements
+Group     1 (        Protein) has  6519 elements
+Group     2 (      Protein-H) has  3331 elements
+Group     3 (        C-alpha) has   425 elements
+Group     4 (       Backbone) has  1275 elements
+Group     5 (      MainChain) has  1696 elements
+Group     6 (   MainChain+Cb) has  2078 elements
+Group     7 (    MainChain+H) has  2115 elements
+Group     8 (      SideChain) has  4404 elements
+Group     9 (    SideChain-H) has  1635 elements
+Group    10 (    Prot-Masses) has  6519 elements
+Group    11 (    non-Protein) has 61038 elements
+Group    12 (          Water) has 61038 elements
+Group    13 (            SOL) has 61038 elements
+Group    14 (      non-Water) has  6519 elements
+Select a group: Number of (3-atomic) solvent molecules: 20346
+
+Back Off! I just backed up topol_hybrid.top to ./#topol_hybrid.top.2#
+Using random seed -281411585.
+Replacing solvent molecule 3856 (atom 18087) with K
+Replacing solvent molecule 13268 (atom 46323) with K
+Replacing solvent molecule 7268 (atom 28323) with K
+Replacing solvent molecule 9797 (atom 35910) with K
+Replacing solvent molecule 19003 (atom 63528) with K
+Replacing solvent molecule 13940 (atom 48339) with K
+Replacing solvent molecule 1695 (atom 11604) with K
+Replacing solvent molecule 17107 (atom 57840) with K
+Replacing solvent molecule 6264 (atom 25311) with K
+Replacing solvent molecule 11009 (atom 39546) with K
+Replacing solvent molecule 1414 (atom 10761) with K
+Replacing solvent molecule 9019 (atom 33576) with K
+Replacing solvent molecule 10749 (atom 38766) with K
+Replacing solvent molecule 14621 (atom 50382) with K
+Replacing solvent molecule 18278 (atom 61353) with K
+Replacing solvent molecule 5047 (atom 21660) with K
+Replacing solvent molecule 12654 (atom 44481) with K
+Replacing solvent molecule 19714 (atom 65661) with K
+Replacing solvent molecule 9623 (atom 35388) with K
+Replacing solvent molecule 7166 (atom 28017) with K
+Replacing solvent molecule 4476 (atom 19947) with K
+Replacing solvent molecule 1165 (atom 10014) with K
+Replacing solvent molecule 10475 (atom 37944) with K
+Replacing solvent molecule 4506 (atom 20037) with K
+Replacing solvent molecule 16602 (atom 56325) with K
+Replacing solvent molecule 9820 (atom 35979) with K
+Replacing solvent molecule 521 (atom 8082) with K
+Replacing solvent molecule 6446 (atom 25857) with K
+Replacing solvent molecule 5725 (atom 23694) with K
+Replacing solvent molecule 5757 (atom 23790) with K
+Replacing solvent molecule 19789 (atom 65886) with K
+Replacing solvent molecule 7009 (atom 27546) with K
+Replacing solvent molecule 9862 (atom 36105) with K
+Replacing solvent molecule 12278 (atom 43353) with K
+Replacing solvent molecule 13463 (atom 46908) with K
+Replacing solvent molecule 3158 (atom 15993) with K
+Replacing solvent molecule 13079 (atom 45756) with K
+Replacing solvent molecule 13424 (atom 46791) with K
+Replacing solvent molecule 12230 (atom 43209) with K
+Replacing solvent molecule 5160 (atom 21999) with K
+Replacing solvent molecule 9432 (atom 34815) with K
+Replacing solvent molecule 7225 (atom 28194) with K
+Replacing solvent molecule 17342 (atom 58545) with K
+Replacing solvent molecule 7434 (atom 28821) with K
+Replacing solvent molecule 16479 (atom 55956) with K
+Replacing solvent molecule 16174 (atom 55041) with K
+Replacing solvent molecule 17569 (atom 59226) with K
+Replacing solvent molecule 7163 (atom 28008) with K
+Replacing solvent molecule 13259 (atom 46296) with K
+Replacing solvent molecule 19412 (atom 64755) with K
+Replacing solvent molecule 14838 (atom 51033) with K
+Replacing solvent molecule 8989 (atom 33486) with K
+Replacing solvent molecule 15284 (atom 52371) with K
+Replacing solvent molecule 3393 (atom 16698) with K
+Replacing solvent molecule 1453 (atom 10878) with K
+Replacing solvent molecule 4794 (atom 20901) with K
+Replacing solvent molecule 5715 (atom 23664) with K
+Replacing solvent molecule 10185 (atom 37074) with K
+Replacing solvent molecule 1292 (atom 10395) with K
+Replacing solvent molecule 2294 (atom 13401) with K
+Replacing solvent molecule 7525 (atom 29094) with K
+Replacing solvent molecule 15560 (atom 53199) with K
+Replacing solvent molecule 18608 (atom 62343) with K
+Replacing solvent molecule 3559 (atom 17196) with K
+Replacing solvent molecule 17578 (atom 59253) with K
+Replacing solvent molecule 3062 (atom 15705) with CL
+Replacing solvent molecule 12023 (atom 42588) with CL
+Replacing solvent molecule 5948 (atom 24363) with CL
+Replacing solvent molecule 10206 (atom 37137) with CL
+Replacing solvent molecule 1613 (atom 11358) with CL
+Replacing solvent molecule 14155 (atom 48984) with CL
+Replacing solvent molecule 7794 (atom 29901) with CL
+Replacing solvent molecule 8759 (atom 32796) with CL
+Replacing solvent molecule 17255 (atom 58284) with CL
+Replacing solvent molecule 9938 (atom 36333) with CL
+Replacing solvent molecule 18089 (atom 60786) with CL
+Replacing solvent molecule 12931 (atom 45312) with CL
+Replacing solvent molecule 11796 (atom 41907) with CL
+Replacing solvent molecule 16699 (atom 56616) with CL
+Replacing solvent molecule 4387 (atom 19680) with CL
+Replacing solvent molecule 15926 (atom 54297) with CL
+Replacing solvent molecule 19862 (atom 66105) with CL
+Replacing solvent molecule 655 (atom 8484) with CL
+Replacing solvent molecule 17679 (atom 59556) with CL
+Replacing solvent molecule 19491 (atom 64992) with CL
+Replacing solvent molecule 2422 (atom 13785) with CL
+Replacing solvent molecule 17277 (atom 58350) with CL
+Replacing solvent molecule 18825 (atom 62994) with CL
+Replacing solvent molecule 6059 (atom 24696) with CL
+Replacing solvent molecule 19817 (atom 65970) with CL
+Replacing solvent molecule 13628 (atom 47403) with CL
+Replacing solvent molecule 4106 (atom 18837) with CL
+Replacing solvent molecule 3744 (atom 17751) with CL
+Replacing solvent molecule 8335 (atom 31524) with CL
+Replacing solvent molecule 16749 (atom 56766) with CL
+Replacing solvent molecule 2457 (atom 13890) with CL
+Replacing solvent molecule 8432 (atom 31815) with CL
+Replacing solvent molecule 2992 (atom 15495) with CL
+Replacing solvent molecule 1028 (atom 9603) with CL
+Replacing solvent molecule 8320 (atom 31479) with CL
+Replacing solvent molecule 4031 (atom 18612) with CL
+Replacing solvent molecule 15610 (atom 53349) with CL
+Replacing solvent molecule 15901 (atom 54222) with CL
+Replacing solvent molecule 16670 (atom 56529) with CL
+Replacing solvent molecule 13375 (atom 46644) with CL
+Replacing solvent molecule 13530 (atom 47109) with CL
+Replacing solvent molecule 1235 (atom 10224) with CL
+Replacing solvent molecule 3478 (atom 16953) with CL
+Replacing solvent molecule 162 (atom 7005) with CL
+Replacing solvent molecule 13756 (atom 47787) with CL
+Replacing solvent molecule 638 (atom 8433) with CL
+Replacing solvent molecule 15887 (atom 54180) with CL
+Replacing solvent molecule 3651 (atom 17472) with CL
+Replacing solvent molecule 11242 (atom 40245) with CL
+Replacing solvent molecule 7647 (atom 29460) with CL
+Replacing solvent molecule 10511 (atom 38052) with CL
+Replacing solvent molecule 20308 (atom 67443) with CL
+Replacing solvent molecule 12810 (atom 44949) with CL
+Replacing solvent molecule 1635 (atom 11424) with CL
+Replacing solvent molecule 18151 (atom 60972) with CL
+Replacing solvent molecule 5383 (atom 22668) with CL
+Replacing solvent molecule 14597 (atom 50310) with CL
+Replacing solvent molecule 3775 (atom 17844) with CL
+Replacing solvent molecule 11868 (atom 42123) with CL
+Replacing solvent molecule 203 (atom 7128) with CL
+Replacing solvent molecule 16123 (atom 54888) with CL
+Replacing solvent molecule 15811 (atom 53952) with CL
+Replacing solvent molecule 12217 (atom 43170) with CL
+
+
+GROMACS reminds you: "Confirmed" (Star Trek)
+
+Will try to add 65 K ions and 63 CL ions.
+Select a continuous group of solvent molecules
+Selected 13: 'SOL'
+
+Processing topology
+Replacing 128 solute molecules in topology file (topol_hybrid.top)  by 65 K and 63 CL ions.

@@ -1,0 +1,35 @@
+2026-03-16 10:47:09,780 - INFO - ============================================================
+2026-03-16 10:47:09,780 - INFO - pHLA MD PRODUCTION RUN
+2026-03-16 10:47:09,780 - INFO - Replica: 2
+2026-03-16 10:47:09,780 - INFO - Working directory: /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/replica_2
+2026-03-16 10:47:09,780 - INFO - ============================================================
+2026-03-16 10:47:09,780 - INFO - Preparing system files...
+2026-03-16 10:47:09,816 - INFO -   Copied: npt.gro
+2026-03-16 10:47:09,857 - INFO -   Copied: topol.top
+2026-03-16 10:47:09,890 - INFO -   Copied: state_npt.cpt
+2026-03-16 10:47:09,912 - INFO -   Copied: topol_Protein_chain_P.itp
+2026-03-16 10:47:09,928 - INFO -   Copied: posre_Protein_chain_P.itp
+2026-03-16 10:47:09,985 - INFO -   Copied: topol_Protein_chain_A.itp
+2026-03-16 10:47:10,007 - INFO -   Copied: posre_Protein_chain_A.itp
+2026-03-16 10:47:10,027 - INFO -   Copied: topol_Protein_chain_H.itp
+2026-03-16 10:47:10,046 - INFO -   Copied: posre_Protein_chain_H.itp
+2026-03-16 10:47:10,067 - INFO -   Copied: topol_Protein_chain_L.itp
+2026-03-16 10:47:10,081 - INFO -   Copied: posre_Protein_chain_L.itp
+2026-03-16 10:47:10,100 - INFO -   Copied: posre_HLA_CA.itp
+2026-03-16 10:47:10,101 - INFO - ============================================================
+2026-03-16 10:47:10,101 - INFO - PRODUCTION MD - Replica 2
+2026-03-16 10:47:10,101 - INFO - Simulation time: 150 ns
+2026-03-16 10:47:10,101 - INFO - ============================================================
+2026-03-16 10:47:10,147 - INFO - Running on node: node19
+2026-03-16 10:47:10,147 - INFO - CUDA_VISIBLE_DEVICES: 0
+2026-03-16 10:47:10,147 - INFO - Running: grompp_md_r2
+2026-03-16 10:47:12,198 - INFO - ✓ grompp_md_r2 completed
+2026-03-16 10:47:12,198 - INFO - Running: mdrun_r2
+2026-03-16 17:37:55,276 - INFO - ✓ mdrun_r2 completed
+2026-03-16 17:37:55,301 - INFO - ============================================================
+2026-03-16 17:37:55,301 - INFO - ✓ PRODUCTION MD COMPLETED SUCCESSFULLY
+2026-03-16 17:37:55,301 - INFO - ============================================================
+2026-03-16 17:37:55,301 - INFO - Output files in: /public/home/xuziyi/MD/results/production_run_20260315/design_373_dldesign_13_best/replica_2
+2026-03-16 17:37:55,301 - INFO -   - md_r2.xtc (trajectory)
+2026-03-16 17:37:55,301 - INFO -   - md_r2.edr (energies)
+2026-03-16 17:37:55,301 - INFO -   - md_r2.gro (final structure)

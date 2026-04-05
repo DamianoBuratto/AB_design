@@ -1,0 +1,29 @@
+
+#include "charmm36m-mut.ff/forcefield.itp"
+
+#include "pmx_topol_Protein_chain_P.itp"
+#include "pmx_topol_Protein_chain_A.itp"
+#include "pmx_topol_Protein_chain_H.itp"
+#include "pmx_topol_Protein_chain_L.itp"
+#include "/public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/tip3p.itp"
+
+
+
+
+#ifdef POSRES_WATER
+[ position_restraints ]
+1    1       1000       1000       1000
+#endif
+#include "/public/home/xuziyi/FEP/force_fields/mutff/charmm36m-mut.ff/ions.itp"
+
+[ system ]
+PMX MODEL in water
+
+[ molecules ]
+Protein_chain_P 1
+Protein_chain_A 1
+Protein_chain_H 1
+Protein_chain_L 1
+SOL         20218
+K                65
+CL               63

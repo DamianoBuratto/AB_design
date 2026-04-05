@@ -1,0 +1,90 @@
+                     :-) GROMACS - gmx make_ndx, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/bound
+Command line:
+  gmx make_ndx -f structure_forw_mutated_ff_ions.gro -o index.ndx
+
+
+Reading structure file
+
+GROMACS reminds you: "Got Coffee, Got Donuts, Got Wasted" (F. Black)
+
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:   425    Protein residues
+There are: 20218      Water residues
+There are:   128        Ion residues
+Analysing Protein...
+
+  0 System              : 67301 atoms
+  1 Protein             :  6519 atoms
+  2 Protein-H           :  3331 atoms
+  3 C-alpha             :   425 atoms
+  4 Backbone            :  1275 atoms
+  5 MainChain           :  1696 atoms
+  6 MainChain+Cb        :  2078 atoms
+  7 MainChain+H         :  2115 atoms
+  8 SideChain           :  4404 atoms
+  9 SideChain-H         :  1635 atoms
+ 10 Prot-Masses         :  6519 atoms
+ 11 non-Protein         : 60782 atoms
+ 12 Water               : 60654 atoms
+ 13 SOL                 : 60654 atoms
+ 14 non-Water           :  6647 atoms
+ 15 Ion                 :   128 atoms
+ 16 Water_and_ions      : 60782 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+Removed group 1 'Protein'
+Removed group 2 'Protein-H'
+Removed group 3 'C-alpha'
+Removed group 4 'Backbone'
+Removed group 5 'MainChain'
+Removed group 6 'MainChain+Cb'
+Removed group 7 'MainChain+H'
+Removed group 8 'SideChain'
+Removed group 9 'SideChain-H'
+Removed group 10 'Prot-Masses'
+Removed group 11 'non-Protein'
+Removed group 12 'Water'
+Removed group 13 'SOL'
+Removed group 14 'non-Water'
+Removed group 15 'Ion'
+Removed group 16 'Water_and_ions'
+
+> 
+Found 60782 atoms with residue names SOL K CL
+
+> 
+Copied index group 0 'System'
+Copied index group 1 'SOL_K_CL'
+Complemented group: 6519 atoms
+Merged two groups with AND: 67301 6519 -> 6519
+
+> 
+
+> 
+
+> 
+
+  0 System              : 67301 atoms
+  1 SOLV                : 60782 atoms
+  2 SOLU                :  6519 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 

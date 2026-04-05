@@ -1,0 +1,1056 @@
+[node27:51688] mca_base_component_repository_open: unable to open mca_plm_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+[node27:51688] mca_base_component_repository_open: unable to open mca_ras_tm: libtorque.so.2: cannot open shared object file: No such file or directory (ignored)
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            node27
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   node27
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2023.2 (-:
+
+Executable:   /public/software/apps/gromacs/2023.2-mpi/bin/gmx_mpi
+Data prefix:  /public/software/apps/gromacs/2023.2-mpi
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/unbound_R2
+Command line:
+  gmx_mpi mdrun -v -deffnm em -multidir lambda0 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 lambda7 lambda8 lambda9 lambda10 lambda11 lambda12 lambda13 lambda14 lambda15 lambda16 lambda17 lambda18 lambda19 lambda20 lambda21 lambda22 lambda23 lambda24 lambda25 lambda26 lambda27 lambda28 lambda29 lambda30 lambda31 -gpu_id 01
+
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+Reading file em.tpr, VERSION 2023.2 (single precision)
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 9 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 22 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 15 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 2 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 27 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 5 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 31 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 25 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 17 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 6 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 14 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 30 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 26 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 20 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+This is simulation 18 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 3 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 29 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 1 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 10 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 7 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 21 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 16 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 12 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 4 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 13 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 11 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 0 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 8 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 28 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 23 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 24 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+2 GPUs selected for this run.
+Mapping of GPU IDs to the 32 GPU tasks in the 32 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1,PP:1
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+
+This is simulation 19 out of 32 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Non-default thread affinity set, disabling internal thread affinity
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+Using 1 OpenMP thread 
+
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14237e+06 Fmax= 8.26903e+02, atom= 184
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13591e+06 Fmax= 7.65014e+02, atom= 2068
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14485e+06 Fmax= 7.73866e+02, atom= 846
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14567e+06 Fmax= 7.69209e+02, atom= 2402
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13890e+06 Fmax= 6.98984e+02, atom= 2828
+
+writing lowest energy coordinates.
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+
+Steepest Descents:
+   Tolerance (Fmax)   =  7.00000e+02
+   Number of steps    =        70000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14187e+06 Fmax= 7.72014e+02, atom= 1777
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13745e+06 Fmax= 7.75818e+02, atom= 2184
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14361e+06 Fmax= 7.93358e+02, atom= 1421
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14579e+06 Fmax= 7.36338e+02, atom= 1381
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14510e+06 Fmax= 6.91848e+02, atom= 1381
+
+writing lowest energy coordinates.
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14192e+06 Fmax= 7.33963e+02, atom= 2037
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14583e+06 Fmax= 8.24254e+02, atom= 2880
+
+Steepest Descents converged to Fmax < 700 in 1 steps
+Potential Energy  = -1.1389048e+06
+Maximum force     =  6.9898364e+02 on atom 2828
+Norm of force     =  5.0228601e+01
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14584e+06 Fmax= 7.74180e+02, atom= 2880
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13889e+06 Fmax= 7.57754e+02, atom= 2274
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13865e+06 Fmax= 8.42004e+02, atom= 411
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13889e+06 Fmax= 1.18463e+04, atom= 679Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13872e+06 Fmax= 8.26718e+02, atom= 784
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13741e+06 Fmax= 1.20455e+04, atom= 184Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13008e+06 Fmax= 1.07512e+04, atom= 2037Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14399e+06 Fmax= 7.64071e+02, atom= 253
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14593e+06 Fmax= 7.11842e+02, atom= 817
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14076e+06 Fmax= 7.51370e+02, atom= 1123
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14549e+06 Fmax= 7.67020e+02, atom= 2402
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13995e+06 Fmax= 1.24005e+04, atom= 2402Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14450e+06 Fmax= 8.22909e+02, atom= 212
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14067e+06 Fmax= 8.55205e+02, atom= 2128
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14498e+06 Fmax= 7.83524e+02, atom= 64
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14082e+06 Fmax= 9.06168e+02, atom= 2880
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14110e+06 Fmax= 7.74503e+02, atom= 1183
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14265e+06 Fmax= 8.54132e+02, atom= 184
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14448e+06 Fmax= 7.01909e+02, atom= 1030
+
+Steepest Descents converged to Fmax < 700 in 1 steps
+Potential Energy  = -1.1450952e+06
+Maximum force     =  6.9184821e+02 on atom 1381
+Norm of force     =  4.9367997e+01
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14679e+06 Fmax= 8.55971e+02, atom= 863
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13563e+06 Fmax= 8.05739e+02, atom= 863
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14494e+06 Fmax= 8.54229e+02, atom= 2792
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.14383e+06 Fmax= 7.73416e+02, atom= 1130
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.13673e+06 Fmax= 7.28170e+02, atom= 762
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13566e+06 Fmax= 1.15562e+04, atom= 1270Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13136e+06 Fmax= 1.18011e+04, atom= 2184Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13777e+06 Fmax= 1.21286e+04, atom= 1421Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13914e+06 Fmax= 1.19972e+04, atom= 1381Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13540e+06 Fmax= 1.21837e+04, atom= 2037Step=    1, Dmax= 1.0e-02 nm, Epot= -1.14103e+06 Fmax= 1.21985e+04, atom= 2880Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13988e+06 Fmax= 1.20361e+04, atom= 2565Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13295e+06 Fmax= 1.18291e+04, atom= 2274Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14390e+06 Fmax= 5.53316e+03, atom= 679Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13396e+06 Fmax= 1.17894e+04, atom= 411Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13501e+06 Fmax= 5.04069e+03, atom= 2037Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13366e+06 Fmax= 1.16040e+04, atom= 784Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14164e+06 Fmax= 5.62237e+03, atom= 184Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13832e+06 Fmax= 1.13773e+04, atom= 253Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13922e+06 Fmax= 1.18590e+04, atom= 534Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13413e+06 Fmax= 1.10242e+04, atom= 1123Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14478e+06 Fmax= 5.81063e+03, atom= 2402Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13944e+06 Fmax= 1.17870e+04, atom= 64Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13601e+06 Fmax= 1.10681e+04, atom= 2128Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13966e+06 Fmax= 1.23025e+04, atom= 2402Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13722e+06 Fmax= 1.12984e+04, atom= 1731Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13938e+06 Fmax= 1.18960e+04, atom= 212Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13677e+06 Fmax= 1.17962e+04, atom= 2880Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13790e+06 Fmax= 1.18589e+04, atom= 184Step=    1, Dmax= 1.0e-02 nm, Epot= -1.14227e+06 Fmax= 1.17878e+04, atom= 863Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13035e+06 Fmax= 1.16967e+04, atom= 2597Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13575e+06 Fmax= 1.16162e+04, atom= 1183Step=    1, Dmax= 1.0e-02 nm, Epot= -1.14047e+06 Fmax= 1.15208e+04, atom= 2792Step=    1, Dmax= 1.0e-02 nm, Epot= -1.12978e+06 Fmax= 1.21388e+04, atom= 2004Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14087e+06 Fmax= 5.41070e+03, atom= 1270Step=    1, Dmax= 1.0e-02 nm, Epot= -1.13794e+06 Fmax= 1.09630e+04, atom= 1130Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13649e+06 Fmax= 5.49015e+03, atom= 2184Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14268e+06 Fmax= 5.66090e+03, atom= 1421Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14469e+06 Fmax= 5.64970e+03, atom= 1381Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14085e+06 Fmax= 5.72457e+03, atom= 2037Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14513e+06 Fmax= 5.69366e+03, atom= 2880Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14489e+06 Fmax= 5.61323e+03, atom= 2565Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13797e+06 Fmax= 5.50890e+03, atom= 2274Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14488e+06 Fmax= 2.39083e+03, atom= 679
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13798e+06 Fmax= 5.48879e+03, atom= 411Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14310e+06 Fmax= 5.31953e+03, atom= 253Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13798e+06 Fmax= 5.38652e+03, atom= 784Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13597e+06 Fmax= 2.19218e+03, atom= 2037
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14482e+06 Fmax= 5.58715e+03, atom= 534Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14244e+06 Fmax= 2.40157e+03, atom= 184
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13968e+06 Fmax= 5.19193e+03, atom= 1123Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14571e+06 Fmax= 2.51660e+03, atom= 2402
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14412e+06 Fmax= 5.51413e+03, atom= 64Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14327e+06 Fmax= 5.32717e+03, atom= 1731Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13999e+06 Fmax= 5.14797e+03, atom= 2128Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14457e+06 Fmax= 5.76468e+03, atom= 2402Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14372e+06 Fmax= 5.51929e+03, atom= 212Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14029e+06 Fmax= 5.40650e+03, atom= 1183Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13484e+06 Fmax= 5.43595e+03, atom= 2597Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14195e+06 Fmax= 5.51489e+03, atom= 184Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14614e+06 Fmax= 5.47078e+03, atom= 863Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14431e+06 Fmax= 5.33172e+03, atom= 2792Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14027e+06 Fmax= 5.45489e+03, atom= 2880Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13749e+06 Fmax= 2.35488e+03, atom= 2184
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.13558e+06 Fmax= 5.66938e+03, atom= 1522Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14364e+06 Fmax= 2.43236e+03, atom= 1421
+Step=    2, Dmax= 5.0e-03 nm, Epot= -1.14291e+06 Fmax= 5.07273e+03, atom= 1130Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14189e+06 Fmax= 2.33277e+03, atom= 1270
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14580e+06 Fmax= 2.46468e+03, atom= 1381
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14194e+06 Fmax= 2.49577e+03, atom= 2037
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14591e+06 Fmax= 2.43650e+03, atom= 2880
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14587e+06 Fmax= 2.41940e+03, atom= 2565
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13894e+06 Fmax= 2.38952e+03, atom= 1010
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14507e+06 Fmax= 1.45042e+03, atom= 679
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13873e+06 Fmax= 2.33069e+03, atom= 411
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14403e+06 Fmax= 2.28291e+03, atom= 253
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13880e+06 Fmax= 2.28141e+03, atom= 784
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14594e+06 Fmax= 2.44603e+03, atom= 534
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13613e+06 Fmax= 1.68651e+03, atom= 2037
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14260e+06 Fmax= 1.38992e+03, atom= 184
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14078e+06 Fmax= 2.23788e+03, atom= 1123
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14502e+06 Fmax= 2.36922e+03, atom= 64
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14590e+06 Fmax= 1.31705e+03, atom= 2402
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13888e+06 Fmax= 1.46623e+03, atom= 411
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14495e+06 Fmax= 3.20446e+03, atom= 679Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14447e+06 Fmax= 2.34422e+03, atom= 1731Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14116e+06 Fmax= 2.31447e+03, atom= 1183
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13570e+06 Fmax= 2.32763e+03, atom= 2597
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14074e+06 Fmax= 2.16051e+03, atom= 2128
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14553e+06 Fmax= 2.49374e+03, atom= 2402
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14456e+06 Fmax= 2.34735e+03, atom= 212
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14502e+06 Fmax= 2.24025e+03, atom= 2792
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13768e+06 Fmax= 1.50142e+03, atom= 2184
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14384e+06 Fmax= 1.42066e+03, atom= 1522
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14687e+06 Fmax= 2.30844e+03, atom= 863
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.13674e+06 Fmax= 2.47704e+03, atom= 1522
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14092e+06 Fmax= 2.27733e+03, atom= 2880
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14272e+06 Fmax= 2.33630e+03, atom= 184
+Step=    3, Dmax= 2.5e-03 nm, Epot= -1.14387e+06 Fmax= 2.14695e+03, atom= 1130
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14249e+06 Fmax= 3.25061e+03, atom= 184Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13605e+06 Fmax= 2.95389e+03, atom= 2037Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14208e+06 Fmax= 1.57165e+03, atom= 1270
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14601e+06 Fmax= 1.38881e+03, atom= 1522
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13880e+06 Fmax= 3.16548e+03, atom= 411Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14512e+06 Fmax= 8.77419e+02, atom= 679
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14580e+06 Fmax= 3.34525e+03, atom= 2402Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14216e+06 Fmax= 1.38843e+03, atom= 2037
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13758e+06 Fmax= 3.15199e+03, atom= 2184Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14372e+06 Fmax= 3.26814e+03, atom= 1522Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14606e+06 Fmax= 1.41321e+03, atom= 2880
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14606e+06 Fmax= 1.46283e+03, atom= 2565
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14286e+06 Fmax= 1.50033e+03, atom= 184
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13914e+06 Fmax= 1.52110e+03, atom= 1010
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13622e+06 Fmax= 6.34369e+02, atom= 2037
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14265e+06 Fmax= 9.32006e+02, atom= 184
+
+writing lowest energy coordinates.
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13894e+06 Fmax= 8.50051e+02, atom= 411
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14586e+06 Fmax= 3.35664e+03, atom= 1522Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14510e+06 Fmax= 1.86218e+03, atom= 679Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14595e+06 Fmax= 1.01207e+03, atom= 2402
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14421e+06 Fmax= 1.52041e+03, atom= 2066
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13895e+06 Fmax= 1.51882e+03, atom= 784
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14615e+06 Fmax= 1.39584e+03, atom= 817
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14598e+06 Fmax= 3.20575e+03, atom= 2880Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14097e+06 Fmax= 1.62220e+03, atom= 1522
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14389e+06 Fmax= 9.26227e+02, atom= 1522
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14278e+06 Fmax= 3.12429e+03, atom= 184Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13775e+06 Fmax= 8.24404e+02, atom= 2184
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14265e+06 Fmax= 1.82183e+03, atom= 184Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14133e+06 Fmax= 1.47645e+03, atom= 1183
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13586e+06 Fmax= 1.54171e+03, atom= 2597
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.13894e+06 Fmax= 1.87339e+03, atom= 411Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14088e+06 Fmax= 1.57937e+03, atom= 2128
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14520e+06 Fmax= 1.46855e+03, atom= 64
+Step=    4, Dmax= 1.2e-03 nm, Epot= -1.14463e+06 Fmax= 8.53890e+02, atom= 1731
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14594e+06 Fmax= 1.74744e+03, atom= 2402Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14606e+06 Fmax= 9.86566e+02, atom= 1522
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14572e+06 Fmax= 1.36920e+03, atom= 1539
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14515e+06 Fmax= 4.92493e+02, atom= 679
+
+writing lowest energy coordinates.
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14515e+06 Fmax= 1.58543e+03, atom= 2792
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14408e+06 Fmax= 3.06667e+03, atom= 2066Step=    4, Dmax= 3.0e-03 nm, Epot= -1.13698e+06 Fmax= 1.42518e+03, atom= 1522
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14701e+06 Fmax= 1.49906e+03, atom= 863
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14610e+06 Fmax= 8.97676e+02, atom= 2880
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13885e+06 Fmax= 3.08094e+03, atom= 784Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14600e+06 Fmax= 3.35418e+03, atom= 817
+Steepest Descents converged to Fmax < 700 in 7 steps
+Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14104e+06 Fmax= 1.51926e+03, atom= 2880
+Potential Energy  = -1.1362228e+06
+Maximum force     =  6.3436914e+02 on atom 2037
+Norm of force     =  2.4524459e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14388e+06 Fmax= 1.91593e+03, atom= 1522Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14292e+06 Fmax= 8.13392e+02, atom= 184
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.13773e+06 Fmax= 1.95214e+03, atom= 2184Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14472e+06 Fmax= 1.46402e+03, atom= 212
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14085e+06 Fmax= 3.08563e+03, atom= 1522Step=    4, Dmax= 3.0e-03 nm, Epot= -1.14403e+06 Fmax= 1.63660e+03, atom= 2616
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14197e+06 Fmax= 3.04389e+03, atom= 1270Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14121e+06 Fmax= 3.12699e+03, atom= 1183Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14268e+06 Fmax= 4.45177e+02, atom= 184
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14204e+06 Fmax= 3.26898e+03, atom= 2037Step=    8, Dmax= 1.1e-03 nm, Epot= -1.13897e+06 Fmax= 5.40584e+02, atom= 2592
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14510e+06 Fmax= 3.12938e+03, atom= 64Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14597e+06 Fmax= 3.75057e+02, atom= 1123
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14605e+06 Fmax= 1.81903e+03, atom= 1522Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14594e+06 Fmax= 3.15011e+03, atom= 2565Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14427e+06 Fmax= 7.73418e+02, atom= 2066
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14509e+06 Fmax= 2.99834e+03, atom= 2792Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14610e+06 Fmax= 1.85698e+03, atom= 2880[node27:51688] 31 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[node27:51688] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[node27:51688] 31 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14391e+06 Fmax= 4.94407e+02, atom= 1522
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14561e+06 Fmax= 3.35731e+03, atom= 1539Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14291e+06 Fmax= 1.96809e+03, atom= 184Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13685e+06 Fmax= 3.30506e+03, atom= 1522Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14620e+06 Fmax= 9.82566e+02, atom= 817
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.13778e+06 Fmax= 5.64295e+02, atom= 2184
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13902e+06 Fmax= 7.81811e+02, atom= 784
+
+writing lowest energy coordinates.
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14098e+06 Fmax= 3.08649e+03, atom= 2880Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13905e+06 Fmax= 3.20120e+03, atom= 1010Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14139e+06 Fmax= 8.26480e+02, atom= 1183
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14105e+06 Fmax= 7.29301e+02, atom= 1522
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1451498e+06
+Maximum force     =  4.9249313e+02 on atom 679
+Norm of force     =  1.9373756e+01
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14526e+06 Fmax= 8.31164e+02, atom= 64
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14609e+06 Fmax= 4.15422e+02, atom= 1522
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14613e+06 Fmax= 4.79856e+02, atom= 2880
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14424e+06 Fmax= 1.99402e+03, atom= 2066Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14521e+06 Fmax= 7.06463e+02, atom= 2792
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14295e+06 Fmax= 5.76881e+02, atom= 184
+
+writing lowest energy coordinates.
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14577e+06 Fmax= 9.91869e+02, atom= 1539
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14619e+06 Fmax= 1.79458e+03, atom= 817Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14076e+06 Fmax= 2.99309e+03, atom= 2128Step=    5, Dmax= 3.6e-03 nm, Epot= -1.13578e+06 Fmax= 3.05883e+03, atom= 2597Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13704e+06 Fmax= 9.42316e+02, atom= 1522
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14136e+06 Fmax= 1.95401e+03, atom= 1183Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14110e+06 Fmax= 7.84509e+02, atom= 2880
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.13900e+06 Fmax= 1.96146e+03, atom= 784Step=    5, Dmax= 1.5e-03 nm, Epot= -1.14469e+06 Fmax= 1.01582e+03, atom= 3017
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1426810e+06
+Maximum force     =  4.4517706e+02 on atom 184
+Norm of force     =  1.8728663e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1389699e+06
+Maximum force     =  5.4058392e+02 on atom 2592
+Norm of force     =  2.0546488e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14102e+06 Fmax= 2.11855e+03, atom= 1522Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14524e+06 Fmax= 1.96314e+03, atom= 64
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1459735e+06
+Maximum force     =  3.7505667e+02 on atom 1123
+Norm of force     =  1.6419574e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14429e+06 Fmax= 6.10150e+02, atom= 2066
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1439142e+06
+Maximum force     =  4.9440720e+02 on atom 1522
+Norm of force     =  1.8596978e+01
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14462e+06 Fmax= 3.18313e+03, atom= 212Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14623e+06 Fmax= 4.05264e+02, atom= 817
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14520e+06 Fmax= 2.06798e+03, atom= 2792Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14142e+06 Fmax= 5.64053e+02, atom= 1183
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1377796e+06
+Maximum force     =  5.6429523e+02 on atom 2184
+Norm of force     =  2.1905647e+01
+Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14391e+06 Fmax= 2.99643e+03, atom= 2616Step=    5, Dmax= 3.6e-03 nm, Epot= -1.14693e+06 Fmax= 3.06519e+03, atom= 863Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14215e+06 Fmax= 7.37075e+02, atom= 1270
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14221e+06 Fmax= 9.41623e+02, atom= 2037
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14577e+06 Fmax= 1.81182e+03, atom= 1539Step=    7, Dmax= 2.2e-03 nm, Epot= -1.13704e+06 Fmax= 1.87681e+03, atom= 1522Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14529e+06 Fmax= 5.65889e+02, atom= 64
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.13905e+06 Fmax= 5.89935e+02, atom= 784
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14110e+06 Fmax= 1.97170e+03, atom= 2880
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14611e+06 Fmax= 8.43910e+02, atom= 2565
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1460936e+06
+Maximum force     =  4.1542197e+02 on atom 1522
+Norm of force     =  1.7409247e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14108e+06 Fmax= 6.95629e+02, atom= 1522
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1461288e+06
+Maximum force     =  4.7985568e+02 on atom 2880
+Norm of force     =  1.8028077e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1429499e+06
+Maximum force     =  5.7688104e+02 on atom 184
+Norm of force     =  2.0739791e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14523e+06 Fmax= 6.81410e+02, atom= 2792
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14220e+06 Fmax= 1.85662e+03, atom= 2037Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13920e+06 Fmax= 8.42576e+02, atom= 1010
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14580e+06 Fmax= 4.11731e+02, atom= 1539
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.13707e+06 Fmax= 4.66339e+02, atom= 1522
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14609e+06 Fmax= 1.96081e+03, atom= 2565Step=    8, Dmax= 2.6e-03 nm, Epot= -1.14114e+06 Fmax= 1.34416e+03, atom= 2880
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1442920e+06
+Maximum force     =  6.1014990e+02 on atom 2066
+Norm of force     =  2.2301905e+01
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14095e+06 Fmax= 7.14470e+02, atom= 1657
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.13593e+06 Fmax= 7.58358e+02, atom= 2597
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14224e+06 Fmax= 4.57589e+02, atom= 2037
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1462326e+06
+Maximum force     =  4.0526443e+02 on atom 817
+Norm of force     =  1.7033479e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1414156e+06
+Maximum force     =  5.6405310e+02 on atom 1183
+Norm of force     =  2.1293144e+01
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14471e+06 Fmax= 1.32295e+03, atom= 817
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.13919e+06 Fmax= 1.97406e+03, atom= 1010Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14614e+06 Fmax= 5.58929e+02, atom= 2565
+
+writing lowest energy coordinates.
+Step=    9, Dmax= 3.1e-03 nm, Epot= -1.14111e+06 Fmax= 2.63534e+03, atom= 2880
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1390458e+06
+Maximum force     =  5.8993463e+02 on atom 784
+Norm of force     =  2.2745052e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1452852e+06
+Maximum force     =  5.6588861e+02 on atom 64
+Norm of force     =  2.0076928e+01
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14092e+06 Fmax= 2.08592e+03, atom= 1657
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1410814e+06
+Maximum force     =  6.9562854e+02 on atom 1522
+Norm of force     =  2.3858504e+01
+Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14477e+06 Fmax= 8.59146e+02, atom= 212
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.13592e+06 Fmax= 2.04180e+03, atom= 2597Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14412e+06 Fmax= 6.79835e+02, atom= 2616
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14212e+06 Fmax= 2.06379e+03, atom= 1270Step=    6, Dmax= 1.8e-03 nm, Epot= -1.14706e+06 Fmax= 7.83231e+02, atom= 863
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14474e+06 Fmax= 1.48834e+03, atom= 817
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.13923e+06 Fmax= 5.64855e+02, atom= 1010
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1452349e+06
+Maximum force     =  6.8141022e+02 on atom 2792
+Norm of force     =  2.2105044e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1457960e+06
+Maximum force     =  4.1173099e+02 on atom 1539
+Norm of force     =  1.6843403e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1370656e+06
+Maximum force     =  4.6633948e+02 on atom 1522
+Norm of force     =  1.9421998e+01
+Step=   10, Dmax= 1.6e-03 nm, Epot= -1.14118e+06 Fmax= 6.45102e+02, atom= 2880
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14098e+06 Fmax= 6.86409e+02, atom= 1657
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14476e+06 Fmax= 1.89381e+03, atom= 212Step=    8, Dmax= 1.1e-03 nm, Epot= -1.13596e+06 Fmax= 6.41753e+02, atom= 2597
+
+writing lowest energy coordinates.
+Step=    7, Dmax= 2.2e-03 nm, Epot= -1.14704e+06 Fmax= 1.97617e+03, atom= 863Step=    8, Dmax= 2.6e-03 nm, Epot= -1.14473e+06 Fmax= 1.90876e+03, atom= 817
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1422375e+06
+Maximum force     =  4.5758893e+02 on atom 2037
+Norm of force     =  1.8469069e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1461424e+06
+Maximum force     =  5.5892902e+02 on atom 2565
+Norm of force     =  2.0157594e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14480e+06 Fmax= 5.17724e+02, atom= 212
+
+writing lowest energy coordinates.
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14708e+06 Fmax= 5.96824e+02, atom= 863
+
+writing lowest energy coordinates.
+Step=    9, Dmax= 1.3e-03 nm, Epot= -1.14480e+06 Fmax= 2.11798e+02, atom= 817
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 7 steps
+Potential Energy  = -1.1441168e+06
+Maximum force     =  6.7983453e+02 on atom 2616
+Norm of force     =  2.5496098e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1392261e+06
+Maximum force     =  5.6485468e+02 on atom 1010
+Norm of force     =  2.0010055e+01
+
+Steepest Descents converged to Fmax < 700 in 11 steps
+Potential Energy  = -1.1411842e+06
+Maximum force     =  6.4510168e+02 on atom 2880
+Norm of force     =  2.0487187e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1409752e+06
+Maximum force     =  6.8640857e+02 on atom 1657
+Norm of force     =  2.4561761e+01
+Step=    8, Dmax= 1.1e-03 nm, Epot= -1.14218e+06 Fmax= 6.63300e+02, atom= 1270
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1359595e+06
+Maximum force     =  6.4175287e+02 on atom 2597
+Norm of force     =  2.3310498e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1447969e+06
+Maximum force     =  5.1772406e+02 on atom 212
+Norm of force     =  1.9439022e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1470838e+06
+Maximum force     =  5.9682379e+02 on atom 863
+Norm of force     =  2.0251121e+01
+
+Steepest Descents converged to Fmax < 700 in 10 steps
+Potential Energy  = -1.1448001e+06
+Maximum force     =  2.1179814e+02 on atom 817
+Norm of force     =  1.4756211e+01
+
+Steepest Descents converged to Fmax < 700 in 9 steps
+Potential Energy  = -1.1421762e+06
+Maximum force     =  6.6329980e+02 on atom 1270
+Norm of force     =  2.3199294e+01
+
+GROMACS reminds you: "All You Need is Greed" (Aztec Camera)
+

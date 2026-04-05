@@ -1,0 +1,116 @@
+                      :-) GROMACS - gmx grompp, 2024.2 (-:
+
+Executable:   /public/software/apps/gromacs/2024.2/bin/gmx
+Data prefix:  /public/software/apps/gromacs/2024.2
+Working dir:  /public/home/xuziyi/FEP/outputs/design_373_dldesign_13_best/forward/unbound
+Command line:
+  gmx grompp -f minim.mdp -c pHLA_forw_mutated_ff_water.gro -p topol_hybrid.top -o pHLA_forw_mutated_ff_ions.tpr -maxwarn 2
+
+Ignoring obsolete mdp entry 'ns-type'
+
+NOTE 1 [file minim.mdp]:
+  For a correct single-point energy evaluation with nsteps = 0, use
+  continuation = yes to avoid constraining the input coordinates.
+
+
+NOTE 2 [file minim.mdp]:
+  With PME there is a minor soft core effect present at the cut-off,
+  proportional to (LJsigma/rcoulomb)^6. This could have a minor effect on
+  energy conservation, but usually other effects dominate. With a common
+  sigma value of 0.34 nm the fraction of the particle-particle potential at
+  the cut-off at lambda=0.5 is around 2.2e-05, while ewald-rtol is 1.0e-05.
+
+
+NOTE 3 [file minim.mdp]:
+  nstcomm < nstcalcenergy defeats the purpose of nstcalcenergy, consider
+  setting nstcomm equal to nstcalcenergy for less overhead
+
+Generating 1-4 interactions: fudge = 1
+
+NOTE 4 [file topol_hybrid.top, line 23]:
+  System has non-zero total charge: -2.000000
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+
+NOTE 5 [file topol_hybrid.top, line 23]:
+  State B has non-zero total charge: -1.000000
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+
+WARNING 1 [file topol_hybrid.top, line 23]:
+  You are using Ewald electrostatics in a system with net charge. This can
+  lead to severe artifacts, such as ions moving into regions with low
+  dielectric, due to the uniform background charge. We suggest to
+  neutralize your system with counter ions, possibly in combination with a
+  physiological salt concentration.
+
+Setting the LD random seed to -201593345
+
+Generated 118802 of the 118828 non-bonded parameter combinations
+
+Generated 88948 of the 118828 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_P'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmueller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. 10 (2014) pp. 381-393
+-------- -------- --- Thank You --- -------- --------
+
+
+NOTE 6 [file topol_hybrid.top, line 23]:
+  Zero-step energy minimization will alter the coordinates before
+  calculating the energy. If you just want the energy of a single point,
+  try zero-step MD (with unconstrained_start = yes). To do multiple
+  single-point energy evaluations of different configurations of the same
+  topology, use mdrun -rerun.
+
+Number of degrees of freedom in T-Coupling group rest is 136378.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 7 [file minim.mdp]:
+  COM removal frequency is set to (1).
+  Other settings require a global communication frequency of 100.
+  Note that this will require additional global communication steps,
+  which will reduce performance when using multiple ranks.
+  Consider setting nstcomm to a multiple of 100.
+
+
+There were 7 NOTEs
+
+There was 1 WARNING
+
+GROMACS reminds you: "Baseball Heroes Only" (P.J. Harvey)
+
+Analysing residue names:
+There are:   189    Protein residues
+There are: 21462      Water residues
+Analysing Protein...
+
+The largest distance between non-perturbed excluded atoms is 0.424 nm between atom 2326 and 2333
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 96x72x60, spacing 0.119 0.118 0.119
+
+Estimate for the relative computational load of the PME mesh part: 0.26
+
+This run will generate roughly 5 Mb of data

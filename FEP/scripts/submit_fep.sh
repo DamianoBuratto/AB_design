@@ -50,15 +50,15 @@ MDP_VERSION="_fep"   # suffix: em_fep.mdp, nvt_fep.mdp, etc.
 # --with-reverse   shortcut to submit both forward and reverse
 # Positional args: e.g.  forward reverse
 #===============================================================
-DIRECTIONS="forward"
+DIRECTIONS=""
 for _arg in "$@"; do
     case "$_arg" in
         --with-reverse)    DIRECTIONS="forward reverse" ;;
-        forward|reverse)   [[ "$DIRECTIONS" != *"$_arg"* ]] && DIRECTIONS="$DIRECTIONS $_arg" ;;
+        forward|reverse)   [[ "$DIRECTIONS" != *"$_arg"* ]] && DIRECTIONS="${DIRECTIONS:+$DIRECTIONS }$_arg" ;;
         *) echo "WARNING: Unknown argument '$_arg', ignoring." ;;
     esac
 done
-DIRECTIONS="${DIRECTIONS## }"  # strip leading space
+[[ -z "$DIRECTIONS" ]] && DIRECTIONS="forward"  # default: forward only
 
 [[ -d "$OUTPUTS_DIR" ]] || { echo "ERROR: Outputs dir not found: $OUTPUTS_DIR"; exit 1; }
 [[ -d "$MDP_DIR"     ]] || { echo "ERROR: MDP dir not found: $MDP_DIR"; exit 1; }
