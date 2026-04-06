@@ -8,6 +8,7 @@
 #   bash scripts/submit_fep.sh                         # forward only
 #   bash scripts/submit_fep.sh reverse                 # reverse only
 #   bash scripts/submit_fep.sh forward reverse         # both
+#   bash scripts/submit_fep.sh reverse --force         # resubmit even if prod.gro exists
 #####################################################
 
 #===============================================================
@@ -20,6 +21,7 @@ GMXLIB_PATH="/public/home/xuziyi/FEP/force_fields/mutff"
 
 # --- Design ---
 DESIGN_NAME="design_373_dldesign_13_best"
+MD_REPLICA=1                                       # MD replica index (1, 2, or 3); override with --md-replica=N
 NR_REPLICAS=3
 
 # --- SLURM resources ---
@@ -38,9 +40,8 @@ MPI_PROFILE="/public/software/profile.d/mpi_openmpi-intel-2.1.2.sh"
 OMP_THREADS=1    # 32 MPI ranks on 32 CPUs (1 rank/core); 1 OMP thread per rank
 
 #===============================================================
-# DERIVED PATHS
+# DERIVED PATHS  (computed AFTER argument parsing below)
 #===============================================================
-OUTPUTS_DIR="${FEP_ROOT}/outputs/${DESIGN_NAME}"
 MDP_DIR="${FEP_ROOT}/mdps"
 MDP_VERSION="_fep"   # suffix: em_fep.mdp, nvt_fep.mdp, etc.
 
@@ -51,14 +52,20 @@ MDP_VERSION="_fep"   # suffix: em_fep.mdp, nvt_fep.mdp, etc.
 # Positional args: e.g.  forward reverse
 #===============================================================
 DIRECTIONS=""
+FORCE_RESUBMIT=false
 for _arg in "$@"; do
     case "$_arg" in
         --with-reverse)    DIRECTIONS="forward reverse" ;;
+        --force)           FORCE_RESUBMIT=true ;;
+        --md-replica=*)    MD_REPLICA="${_arg#*=}" ;;
         forward|reverse)   [[ "$DIRECTIONS" != *"$_arg"* ]] && DIRECTIONS="${DIRECTIONS:+$DIRECTIONS }$_arg" ;;
         *) echo "WARNING: Unknown argument '$_arg', ignoring." ;;
     esac
 done
 [[ -z "$DIRECTIONS" ]] && DIRECTIONS="forward"  # default: forward only
+
+# Derive OUTPUTS_DIR here — after --md-replica=N may have updated MD_REPLICA
+OUTPUTS_DIR="${FEP_ROOT}/outputs/replica${MD_REPLICA}/${DESIGN_NAME}"
 
 [[ -d "$OUTPUTS_DIR" ]] || { echo "ERROR: Outputs dir not found: $OUTPUTS_DIR"; exit 1; }
 [[ -d "$MDP_DIR"     ]] || { echo "ERROR: MDP dir not found: $MDP_DIR"; exit 1; }
@@ -66,9 +73,10 @@ done
 echo "============================================"
 echo " FEP Submit"
 echo " Design:    ${DESIGN_NAME}"
+echo " MD Replica: ${MD_REPLICA}"
 echo " Outputs:   ${OUTPUTS_DIR}"
 echo " Direction: ${DIRECTIONS}"
-echo " Replicas:  ${NR_REPLICAS}"
+echo " HREX Reps: ${NR_REPLICAS}"
 echo "============================================"
 
 start_dir="$PWD"
@@ -89,8 +97,8 @@ for direction in ${DIRECTIONS}; do
 
             cd "$state_dir" || { echo "ERROR: Cannot cd to ${state_dir}"; continue; }
 
-            # Skip if production already complete
-            if [[ -e "lambda31/PROD/prod.gro" ]]; then
+            # Skip if production already complete (use --force to override)
+            if [[ -e "lambda31/PROD/prod.gro" ]] && [[ "$FORCE_RESUBMIT" == false ]]; then
                 echo "DONE: ${direction}/${state}_R${replica} (prod.gro exists)"
                 cd "$start_dir"; continue
             fi
@@ -102,10 +110,10 @@ for direction in ${DIRECTIONS}; do
                 cd "$start_dir"; continue
             fi
 
-            # Job name (max 15 chars): R<n><d><S>  e.g. R1fB
+            # Job name (max 15 chars): m<md><d><S>r<rep>  e.g. m1fBr2
             dir_code="${direction:0:1}"
             [[ "$state" == "bound" ]] && state_code="B" || state_code="U"
-            job_name="R${replica}${dir_code}${state_code}"
+            job_name="m${MD_REPLICA}${dir_code}${state_code}r${replica}"
             output_log="${direction}_${state}_R${replica}.log"
 
             #-----------------------------------------------------------

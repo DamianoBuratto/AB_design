@@ -60,10 +60,14 @@ def log(msg: str):
 
 
 def count_user_jobs(user: str) -> int:
-    """Return how many jobs (any state) the user currently has in SLURM."""
+    """Return how many jobs (any state) the user has in the 'multi' partition.
+
+    Only the multi partition is counted so that FEP jobs (quick partition)
+    do not consume MD slot budget.
+    """
     try:
         result = subprocess.run(
-            ["squeue", "-u", user, "-h"],
+            ["squeue", "-u", user, "-p", "multi", "-h"],
             capture_output=True, text=True, timeout=15
         )
         lines = [l for l in result.stdout.splitlines() if l.strip()]

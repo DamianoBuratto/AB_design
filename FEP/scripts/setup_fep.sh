@@ -25,9 +25,7 @@ CONDA_ENV="fep_env"                                # Conda environment name
 
 # --- Design / mutation ---
 DESIGN_NAME="design_373_dldesign_13_best"         # Subdirectory under inputs/
-INPUT_STRUCTURE="replica_1/md_r1.gro"             # Final MD GRO (relative to inputs/DESIGN_NAME)
-INPUT_TPR="replica_1/md_r1.tpr"                   # TPR matching the GRO (for gmx trjconv)
-INPUT_PDB="setup/system.pdb"                       # pdb2gmx OUTPUT from original MD setup (with H, 6504 atoms = matches GRO)
+MD_REPLICA=1                                       # MD replica index (1, 2, or 3); override with --md-replica N
 MUTATION="HIS239ARG"                              # Label only (for output naming)
 PEPTIDE_CHAIN="P"                                 # Chain ID of the mutated peptide
 PEPTIDE_RESID="8"                                 # Residue index within the peptide chain
@@ -71,6 +69,7 @@ while [[ $# -gt 0 ]]; do
         --direction)        DIRECTION="$2";        shift 2 ;;
         --rev-gro)          REV_GRO="$2";           shift 2 ;;
         --rev-gro-unbound)  REV_GRO_UNBOUND="$2";  shift 2 ;;
+        --md-replica)       MD_REPLICA="$2";        shift 2 ;;
         -h|--help)
             cat << 'HELP'
 Usage: bash setup_fep.sh [OPTIONS]
@@ -94,6 +93,11 @@ Usage: bash setup_fep.sh [OPTIONS]
       ARG-end GRO for UNBOUND reverse (OPTIONAL; atom count DIFFERS from
       BOUND -- must be a separate file if provided manually).
       If omitted, auto-extracted from forward/unbound_R1/lambda{N-1}/PROD/prod.xtc.
+
+  --md-replica N
+      MD replica index (1, 2, or 3; default: 1). Controls which MD starting
+      structure is used and determines the output path:
+      outputs/replica<N>/<DESIGN>/{forward,reverse}/
 HELP
             exit 0 ;;
         *) echo "ERROR: Unknown argument: $1. Use --help." >&2; exit 1 ;;
@@ -111,8 +115,11 @@ fi
 #===============================================================
 # DERIVED PATHS
 #===============================================================
-INPUT_DIR="${FEP_ROOT}/inputs/${DESIGN_NAME}"
-WORK_DIR="${FEP_ROOT}/outputs/${DESIGN_NAME}"
+INPUT_DIR="${FEP_ROOT}/inputs/replica${MD_REPLICA}/${DESIGN_NAME}"
+INPUT_STRUCTURE="replica_1/md_r1.gro"    # inner replica is always replica_1
+INPUT_TPR="replica_1/md_r1.tpr"
+INPUT_PDB="setup/system.pdb"
+WORK_DIR="${FEP_ROOT}/outputs/replica${MD_REPLICA}/${DESIGN_NAME}"
 MDP_DIR="${FEP_ROOT}/mdps"
 
 cd "$FEP_ROOT" || { echo "ERROR: Cannot access FEP_ROOT: $FEP_ROOT"; exit 1; }
@@ -236,9 +243,10 @@ normalize_his() {
 echo -e "${YELLOW}=== FEP Setup: ${MUTATION} ===${NC}"
 echo -e "${BLUE}FEP_ROOT:    ${FEP_ROOT}${NC}"
 echo -e "${BLUE}Design:      ${DESIGN_NAME}${NC}"
+echo -e "${BLUE}MD Replica:  ${MD_REPLICA}${NC}"
 echo -e "${BLUE}Input GRO:   ${INPUT_DIR}/${INPUT_STRUCTURE}${NC}"
 echo -e "${BLUE}Temperature: ${SIMULATION_TEMP} K${NC}"
-echo -e "${GREEN}Direction:   ${DIRECTION}  |  ${#LAMBDAS[@]} lambda windows  |  ${NR_REPLICAS} replicas/state${NC}"
+echo -e "${GREEN}Direction:   ${DIRECTION}  |  ${#LAMBDAS[@]} lambda windows  |  ${NR_REPLICAS} HREX replicas/state${NC}"
 
 #===============================================================
 # Step 1: Load environment
@@ -597,6 +605,14 @@ if [[ "$DIRECTION" == "reverse" || "$DIRECTION" == "both" ]]; then
         for state in bound unbound; do
             src="forward/${state}_R${replica}"
             dst="reverse/${state}_R${replica}"
+
+            # Skip directories where PROD already completed — avoids overwriting
+            # topology files when re-running setup to add more replicas.
+            if [[ -e "${dst}/lambda${LAST_WIN}/PROD/prod.gro" ]]; then
+                echo -e "  SKIP: reverse/${state}_R${replica} (PROD already complete)"
+                continue
+            fi
+
             mkdir -p "$dst"
 
             cp "${src}/topol_hybrid.top" "$dst/"
@@ -628,6 +644,7 @@ fi
 echo -e "\n${GREEN}========================================${NC}"
 echo -e "${GREEN}  FEP SETUP COMPLETE${NC}"
 echo -e "${GREEN}  Design:    ${DESIGN_NAME}${NC}"
+echo -e "${GREEN}  MD Replica: ${MD_REPLICA}${NC}"
 echo -e "${GREEN}  Mutation:  ${MUTATION}${NC}"
 echo -e "${GREEN}  Direction: ${DIRECTION}${NC}"
 echo -e "${GREEN}  Output:    ${WORK_DIR}${NC}"
