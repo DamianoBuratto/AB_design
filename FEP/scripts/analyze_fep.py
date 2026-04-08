@@ -298,34 +298,46 @@ def plot_convergence(u_nk_fwd, u_nk_rev, output_path, title):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# Main
+# Batch helpers
 # ──────────────────────────────────────────────────────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='FEP ΔΔG_binding Analysis (MBAR)',
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('directory',
-                        help='Design output directory (e.g., outputs/design_name)')
-    parser.add_argument('--skip',     type=float, default=SKIP_FRACTION,
-                        help='Equilibration skip fraction')
-    parser.add_argument('--temp',     type=float, default=TEMPERATURE,
-                        help='Temperature in K')
-    parser.add_argument('--windows',  type=int,   default=N_WINDOWS,
-                        help='Number of lambda windows')
-    parser.add_argument('--replicas', type=int,   default=MAX_REPLICAS,
-                        help='Maximum replicas to search per state')
-    parser.add_argument('--no-plots', action='store_true',
-                        help='Skip all plots (faster)')
-    args = parser.parse_args()
+def is_analysis_done(design_dir):
+    """Return True if ddG_results.txt already exists (analysis complete)."""
+    return os.path.isfile(os.path.join(design_dir, 'ddG_results.txt'))
 
-    base_path = os.path.abspath(args.directory)
-    if not os.path.isdir(base_path):
-        print(f"ERROR: Directory not found: {base_path}")
-        sys.exit(1)
 
+def find_designs_with_data(outputs_root):
+    """Scan outputs/replica{1..3}/<design>/ and return those containing any .xvg file.
+
+    Returns list of (label, abs_design_path) sorted by replica then design name.
+    """
+    results = []
+    for rep_n in range(1, 4):
+        rep_dir = os.path.join(outputs_root, f"replica{rep_n}")
+        if not os.path.isdir(rep_dir):
+            continue
+        for name in sorted(os.listdir(rep_dir)):
+            design_dir = os.path.join(rep_dir, name)
+            if not os.path.isdir(design_dir):
+                continue
+            has_data = any(
+                fname.endswith('.xvg')
+                for _, _, files in os.walk(design_dir)
+                for fname in files
+            )
+            if has_data:
+                results.append((f"replica{rep_n}/{name}", os.path.abspath(design_dir)))
+    return results
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Single-design analysis
+# ──────────────────────────────────────────────────────────────────────────────
+
+def analyze_one(base_path, args):
+    """Run full \u0394\u0394G analysis for one design directory.  Returns True on success."""
     print("=" * 70)
-    print(f"FEP ΔΔG Analysis  |  {base_path}")
+    print(f"FEP \u0394\u0394G Analysis  |  {base_path}")
     print(f"T = {args.temp} K  |  skip {args.skip*100:.0f}%  |  "
           f"{args.windows} windows  |  max {args.replicas} replicas")
     print("=" * 70)
@@ -339,10 +351,10 @@ def main():
 
     if u_b_f is None:
         print("ERROR: No BOUND forward data. Check directory structure.")
-        sys.exit(1)
+        return False
     if u_u_f is None:
         print("ERROR: No UNBOUND forward data. Check directory structure.")
-        sys.exit(1)
+        return False
 
     # ── MBAR ───────────────────────────────────────────────────────────────────
     print("\nFitting MBAR...")
@@ -356,9 +368,9 @@ def main():
 
     if dG_b is None or dG_u is None:
         print("\nERROR: MBAR calculation failed.")
-        sys.exit(1)
+        return False
 
-    # ── ΔΔG (three estimates) ─────────────────────────────────────────────────
+    # ── \u0394\u0394G (three estimates) ─────────────────────────────────────────────────
     has_rev  = dG_b_r is not None and dG_u_r is not None
     ddG_f    = dG_b_f - dG_u_f
     err_f_v  = np.sqrt(err_b_f**2 + err_u_f**2)
@@ -375,9 +387,10 @@ def main():
     if has_rev:
         print("FINAL RESULTS  (MBAR)")
     else:
-        print("FINAL RESULTS  (MBAR — forward only)")
+        print("FINAL RESULTS  (MBAR \u2014 forward only)")
     print("=" * 70)
-    print(f"  {'':11s}  {'\u0394G_bound (kJ/mol)':^18s}   {'\u0394G_unbound (kJ/mol)':^18s}   {'\u0394\u0394G_binding (kJ/mol)':^18s}")
+    _h1 = "\u0394G_bound (kJ/mol)"; _h2 = "\u0394G_unbound (kJ/mol)"; _h3 = "\u0394\u0394G_binding (kJ/mol)"
+    print(f"  {'':11s}  {_h1:^18s}   {_h2:^18s}   {_h3:^18s}")
     print("-" * 70)
     print(f"  fwd-only :" + _row(dG_b_f, err_b_f, dG_u_f, err_u_f, ddG_f, err_f_v))
     if has_rev:
@@ -427,29 +440,136 @@ def main():
         print("\nGenerating plots...")
         plot_overlap_matrix(
             mbar_b, os.path.join(base_path, 'mbar_overlap_bound.png'),
-            'MBAR Overlap Matrix — Bound')
+            'MBAR Overlap Matrix \u2014 Bound')
         plot_overlap_matrix(
             mbar_u, os.path.join(base_path, 'mbar_overlap_unbound.png'),
-            'MBAR Overlap Matrix — Unbound')
+            'MBAR Overlap Matrix \u2014 Unbound')
         plot_free_energy_profile(
             mbar_b, args.temp,
             os.path.join(base_path, 'free_energy_profile_bound.png'),
-            'Free Energy Profile — Bound')
+            'Free Energy Profile \u2014 Bound')
         plot_free_energy_profile(
             mbar_u, args.temp,
             os.path.join(base_path, 'free_energy_profile_unbound.png'),
-            'Free Energy Profile — Unbound')
+            'Free Energy Profile \u2014 Unbound')
         plot_convergence(
             u_b_f, u_b_r,
             os.path.join(base_path, 'convergence_bound.png'),
-            'Sampling — Bound')
+            'Sampling \u2014 Bound')
         plot_convergence(
             u_u_f, u_u_r,
             os.path.join(base_path, 'convergence_unbound.png'),
-            'Sampling — Unbound')
+            'Sampling \u2014 Unbound')
         print(f"  Plots saved to: {base_path}")
 
     print("\nDone.")
+    return True
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Main
+# ──────────────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='FEP \u0394\u0394G_binding Analysis (MBAR) \u2014 single-design or batch mode',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument('directory',
+                        help='Single design dir (contains forward/) OR outputs/ root for batch auto-discovery')
+    parser.add_argument('--skip',     type=float, default=SKIP_FRACTION,
+                        help='Equilibration skip fraction')
+    parser.add_argument('--temp',     type=float, default=TEMPERATURE,
+                        help='Temperature in K')
+    parser.add_argument('--windows',  type=int,   default=N_WINDOWS,
+                        help='Number of lambda windows')
+    parser.add_argument('--replicas', type=int,   default=MAX_REPLICAS,
+                        help='Maximum replicas to search per state')
+    parser.add_argument('--no-plots', action='store_true',
+                        help='Skip all plots (faster)')
+    parser.add_argument('--force', action='store_true',
+                        help='Re-run even if ddG_results.txt already exists')
+    args = parser.parse_args()
+
+    top = os.path.abspath(args.directory)
+    if not os.path.isdir(top):
+        print(f"ERROR: Directory not found: {top}")
+        sys.exit(1)
+
+    # Batch mode: directory has replicaN/ subdirs but no forward/ at top level
+    is_batch = (
+        not os.path.isdir(os.path.join(top, 'forward')) and
+        any(os.path.isdir(os.path.join(top, f"replica{n}")) for n in range(1, 4))
+    )
+
+    if not is_batch:
+        # ── Single-design mode ─────────────────────────────────────────────
+        if not args.force and is_analysis_done(top):
+            print("Already done (ddG_results.txt exists). Use --force to re-run.")
+            sys.exit(0)
+        ok = analyze_one(top, args)
+        sys.exit(0 if ok else 1)
+
+    # ── Batch mode ──────────────────────────────────────────────────────────
+    designs = find_designs_with_data(top)
+    if not designs:
+        print(f"No designs with XVG data found under: {top}")
+        sys.exit(1)
+
+    n_pending = sum(1 for _, p in designs if args.force or not is_analysis_done(p))
+    print(f"Batch mode: {len(designs)} design(s) with data  |  "
+          f"{len(designs) - n_pending} already done  |  {n_pending} to run")
+    if not args.force:
+        print("  (use --force to re-run completed designs)\n")
+
+    summary = []   # list of (label, result_line)
+    n_ok = n_fail = n_skipped = 0
+
+    for label, design_path in designs:
+        if not args.force and is_analysis_done(design_path):
+            n_skipped += 1
+            try:
+                txt = open(os.path.join(design_path, 'ddG_results.txt'),
+                           encoding='utf-8').read()
+                ddg_line = next(
+                    (l.strip() for l in txt.splitlines()
+                     if '\u0394\u0394G_binding (final)' in l), '(see file)')
+            except Exception:
+                ddg_line = '(see file)'
+            summary.append((label, f"[skip] {ddg_line}"))
+            print(f"[SKIP] {label}")
+            continue
+
+        print(f"\n{'=' * 70}")
+        print(f"[{n_ok + n_fail + n_skipped + 1}/{len(designs)}] {label}")
+        try:
+            ok = analyze_one(design_path, args)
+        except Exception as e:
+            print(f"EXCEPTION: {e}")
+            ok = False
+
+        if ok:
+            n_ok += 1
+            try:
+                txt = open(os.path.join(design_path, 'ddG_results.txt'),
+                           encoding='utf-8').read()
+                ddg_line = next(
+                    (l.strip() for l in txt.splitlines()
+                     if '\u0394\u0394G_binding (final)' in l), '(see file)')
+            except Exception:
+                ddg_line = '(see file)'
+            summary.append((label, ddg_line))
+        else:
+            n_fail += 1
+            summary.append((label, 'FAILED'))
+
+    # ── Batch summary ──────────────────────────────────────────────────────
+    print(f"\n{'=' * 70}")
+    print(f"BATCH SUMMARY  ({n_ok} succeeded  |  {n_fail} failed  |  {n_skipped} skipped)")
+    print(f"{'=' * 70}")
+    for label, line in summary:
+        print(f"  {label:<50s}  {line}")
+    print(f"{'=' * 70}")
+    sys.exit(0 if n_fail == 0 else 1)
 
 
 if __name__ == '__main__':

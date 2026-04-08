@@ -162,9 +162,10 @@ bash scripts/setup_fep.sh --direction reverse
 
 bash scripts/submit_fep.sh reverse
 
-# --- ANALYSIS (after all PROD complete: forward + reverse) ---
-# MBAR analysis -> ddG_results.txt + overlap/convergence plots
+# --- ANALYSIS (after PROD complete) ---
+# Batch: auto-discovers all designs, skips already-done ones
 conda activate fep_env
-python scripts/analyze_fep.py outputs/${DESIGN}
+python scripts/analyze_fep.py outputs/
+# Single design: python scripts/analyze_fep.py outputs/replica1/<DESIGN>
 ```
 
