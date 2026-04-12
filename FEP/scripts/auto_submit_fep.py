@@ -86,7 +86,9 @@ INNER_TPR     = "md_r1.tpr"   # TPR filename inside INNER_REP_DIR
 MD_SRC_PDB    = Path("setup/system.pdb")   # design-level PDB (no inner replica prefix)
 
 # SLURM limits
-QUICK_JOB_LIMIT  = 30  # max jobs in quick partition at once
+# quick QoS: MaxJobsPU=80  →  floor(80/6)=13 slots × 6 jobs = 78 jobs max.
+# Set slightly below max to leave headroom.
+QUICK_JOB_LIMIT  = 72  # max jobs in quick partition at once (80 - headroom)
 JOBS_PER_SLOT    = 6   # jobs per (design, md_replica): bound_R{1..3} + unbound_R{1..3}
 
 # Polling
@@ -476,6 +478,13 @@ def main():
                         help="Generate status report and exit")
     parser.add_argument("--interval", type=int, default=DEFAULT_INTERVAL,
                         help=f"Poll interval in seconds (default: {DEFAULT_INTERVAL})")
+    parser.add_argument("--include-designs", nargs="+", metavar="DESIGN",
+                        help="Whitelist: only process these design name(s). "
+                             "Partial substring match is supported. "
+                             "Example: --include-designs design_42 design_99")
+    parser.add_argument("--include-replicas", nargs="+", type=int, metavar="N",
+                        help="Whitelist: only process these MD replica index(es). "
+                             "Example: --include-replicas 3")
     args = parser.parse_args()
 
     global _log_fh
@@ -492,9 +501,26 @@ def main():
 def _run(args) -> None:
     user = get_current_user()
 
+    # Build optional whitelist filters from CLI args
+    design_filter  = args.include_designs   if hasattr(args, "include_designs")  and args.include_designs  else None
+    replica_filter = args.include_replicas  if hasattr(args, "include_replicas") and args.include_replicas else None
+
+    def apply_filters(work: list[tuple[str, int]]) -> list[tuple[str, int]]:
+        """Return only the (design, md_replica) pairs that pass CLI whitelist filters."""
+        out = []
+        for design, rep_n in work:
+            if replica_filter and rep_n not in replica_filter:
+                continue
+            if design_filter and not any(f in design for f in design_filter):
+                continue
+            out.append((design, rep_n))
+        return out
+
     if args.report:
         all_work = find_available_work()
-        generate_status_report(all_work)
+        # For status report: show filtered view when filters active, full otherwise
+        report_work = apply_filters(all_work) if (design_filter or replica_filter) else all_work
+        generate_status_report(report_work)
         return
 
     max_slots = QUICK_JOB_LIMIT // JOBS_PER_SLOT
@@ -508,10 +534,15 @@ def _run(args) -> None:
     log(f"  Inner GRO    : {INNER_REP_DIR}/{INNER_GRO}  (always, WITH underscore)")
     log(f"  Log file     : {FEP_LOG_FILE}")
     log(f"  Dry-run      : {args.dry_run}")
+    if design_filter:
+        log(f"  Design filter: {design_filter}")
+    if replica_filter:
+        log(f"  Replica filter: {replica_filter}")
     log("=" * 64)
 
     while True:
-        all_work = find_available_work()
+        all_work_full = find_available_work()
+        all_work = apply_filters(all_work_full)
         if not all_work:
             log("No (design, md_replica) pairs found in MD results. Exiting.")
             break
@@ -592,13 +623,13 @@ def _run(args) -> None:
 
         all_done = all(
             slot_forward_complete(d, r) or load_state(d, r).get("retries", 0) >= MAX_RETRIES
-            for d, r in all_work
+            for d, r in all_work   # already filtered
         )
         if all_done:
             log("All (design, replica) slots complete or gave up. Done.")
             break
 
-        remaining = sum(1 for d, r in all_work
+        remaining = sum(1 for d, r in all_work   # already filtered
                         if not slot_forward_complete(d, r)
                         and load_state(d, r).get("retries", 0) < MAX_RETRIES)
         log(f"Slots not yet complete: {remaining}. Sleeping {args.interval}s ...")

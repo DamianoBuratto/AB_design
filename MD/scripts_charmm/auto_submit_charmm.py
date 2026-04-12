@@ -107,7 +107,7 @@ def generate_setup_slurm(pdb_name: str, setup_dir: Path,
     script = f"""#!/bin/bash
 #SBATCH --job-name=setup_{pdb_name}
 #SBATCH --partition=multi
-#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node20,node21,node24,node26
+#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node15,node20,node21,node24,node26
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
@@ -172,7 +172,7 @@ def generate_replica_slurm(pdb_name: str, setup_dir: Path, replica_dir: Path,
     script = f"""#!/bin/bash
 #SBATCH --job-name=prod_{pdb_name}_r{rep}
 #SBATCH --partition=multi
-#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node20,node21,node24,node26
+#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node15,node20,node21,node24,node26
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
