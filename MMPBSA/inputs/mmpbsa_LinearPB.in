@@ -1,0 +1,32 @@
+# Input file for gmx_MMPBSA - Linear Poisson-Boltzmann (pHLA binding affinity)
+# System: pHLA (peptide + HLA alpha chain), CHARMM36m force field
+# Trajectory: 150 ns production MD, 500 ps/frame → ~300 frames per replica
+#
+# Groups in NDX file:
+#   group 1 = prot  (HLA alpha chain, receptor)
+#   group 2 = pep   (peptide, ligand)
+#
+# Run command:
+#   gmx_MMPBSA -O -nogui -i mmpbsa_LinearPB.in \
+#       -cp topol_prot.top -cs prot.tpr \
+#       -ci index_mmpbsa.ndx -cg 1 2 \
+#       -ct protein.xtc -cr ref_chAB.pdb \
+#       -eo gmx_MMPBSA_plot.csv
+
+&general
+sys_name="pHLA_LinearPB",
+# Use all frames from the trajectory
+startframe=1,
+endframe=99999999,
+interval=1,
+# Apply PBC correction and center the complex
+/
+
+&pb
+# radiopt=0: use radii from the force field topology (recommended for GROMACS/CHARMM)
+radiopt=0,
+# istrng: ionic strength (mol/L), physiological 0.15 M
+istrng=0.15,
+# inp=2: non-polar contribution using cavity + dispersion model
+inp=2,
+/
