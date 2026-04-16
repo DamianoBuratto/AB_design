@@ -16,12 +16,16 @@ Stage 2: VALIDATION (AF3)
   Output: Validated Ab-pHLA complex structures
 
 Stage 3: DYNAMICS (MD)              
-  Setup → Equilibration → Production (3×200ns)
+  Setup → Equilibration → Production (3×150ns)
   Output: Equilibrated trajectories
 
-Stage 4: AFFINITY (FEP)         
-  Setup → Lambda Windows (32*4) → Analysis
-  Output: ΔΔG_binding
+Stage 4a: AFFINITY (FEP)        
+  Setup → Lambda Windows (32 λ × 3 replicas) → MBAR
+  Output: ΔΔG_binding (kJ/mol)
+
+Stage 4b: AFFINITY (MMPBSA)     
+  Scan MD replicas → SLURM jobs → gmx_MMPBSA (Linear PB)
+  Output: ΔG_binding per replica
 ```
 
 
@@ -131,14 +135,14 @@ python3 scripts_charmm/batch_analysis.py \
 
 ---
 
-## Module 4: FEP - Free Energy Perturbation (TESTING)
+## Module 4: FEP - Free Energy Perturbation
 
 ### Core Scripts
 
 | Script | Function |
 |--------|----------|
 | `scripts/setup_fep.sh` | Full setup: GRO→PDB, pmx mutate, pdb2gmx, solvate, genion, replica copy, reverse dirs |
-| `scripts/submit_fep.sh` | Batch-generate and submit SLURM jobs|
+| `scripts/submit_fep.sh` | Batch-generate and submit SLURM jobs (32 λ × 3 replicas, bound + unbound) |
 | `scripts/analyze_fep.py` | MBAR post-processing → ΔΔG_binding with overlap matrices and convergence plots |
 | `mdps/em_fep.mdp` | Energy minimization MDP (steep→CG, pmx hybrid topology) |
 | `mdps/nvt_fep.mdp` | NVT equilibration MDP (300 ps, V-rescale, 310 K) |
@@ -152,20 +156,52 @@ cd FEP
 
 # --- FORWARD ---
 #    Runs: GRO->PDB, pmx mutate, pdb2gmx, solvate, genion
-#    Produces: outputs/<DESIGN>/forward/bound_R1~R3 + unbound_R1~R3
+#    Output: outputs/replica<N>/<DESIGN>/forward/bound_R1~R3 + unbound_R1~R3
 bash scripts/setup_fep.sh
-# Submit forward jobs (6 SLURM jobs: bound/unbound x R1-R3)
+# Submit (6 SLURM jobs: bound/unbound × R1-R3)
 bash scripts/submit_fep.sh
 
 # --- REVERSE (after forward PROD is complete) ---
+#    Auto-extracts last frame of forward lambda31/PROD/prod.xtc as starting structure
 bash scripts/setup_fep.sh --direction reverse
-
 bash scripts/submit_fep.sh reverse
 
 # --- ANALYSIS (after PROD complete) ---
-# Batch: auto-discovers all designs, skips already-done ones
 conda activate fep_env
-python scripts/analyze_fep.py outputs/
-# Single design: python scripts/analyze_fep.py outputs/replica1/<DESIGN>
+# Batch: auto-discovers all designs under outputs/, skips already-done ones
+python scripts/analyze_fep.py /public/home/xuziyi/FEP/outputs/
+# Single design:
+python scripts/analyze_fep.py /public/home/xuziyi/FEP/outputs/replica1/<DESIGN>
+```
+
+---
+
+## Module 5: MMPBSA - Binding Free Energy
+
+### Core Scripts
+
+| Script | Function |
+|--------|----------|
+| `scripts/auto_submit_mmpbsa.py` | Auto-submit manager: scans MD results, generates SLURM jobs, polls queue every 5 min |
+| `inputs/mmpbsa_LinearPB.in` | gmx_MMPBSA input (Linear PB method) |
+| `setup_mmpbsa_env.sh` | Create `gmxMMPBSA` conda environment (ambertools + gmx-MMPBSA) |
+
+### Command Flow
+
+```bash
+cd MMPBSA
+
+screen -S mmpbsa
+
+python3 scripts/auto_submit_mmpbsa.py \
+    --md-results /public/home/xuziyi/MD/results \
+    --output     /public/home/xuziyi/MMPBSA/results \
+    --mmpbsa-in  /public/home/xuziyi/MMPBSA/inputs/mmpbsa_LinearPB.in \
+    --script-dir /public/home/xuziyi/MMPBSA/scripts \
+    >> auto_submit_mmpbsa.log 2>&1
+
+Ctrl+A, D
+#    Status: /public/home/xuziyi/MMPBSA/results/mmpbsa_status.md
+#    Results per replica: FINAL_RESULTS_MMPBSA.dat in each mmpbsa_r{N}/ dir
 ```
 
