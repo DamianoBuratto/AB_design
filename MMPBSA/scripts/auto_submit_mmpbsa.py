@@ -416,13 +416,6 @@ def parse_gro_atoms(gro_path):
     return atoms
 
 
-SOLVENT = frozenset([
-    'SOL', 'TIP3', 'TIP3P', 'WAT', 'HOH',
-    'NA', 'NA+', 'SOD', 'CL', 'CL-', 'CLA',
-    'K', 'K+', 'MG', 'CA', 'ZN',
-])
-
-
 design   = "${DESIGN}"
 gro_path = Path('npt.gro')
 top_path = Path('topol.top')
@@ -456,8 +449,6 @@ for i, (resnr, resname, atomname, x, y, z) in enumerate(atoms[:total_prot], star
     elif i <= mol_ends[3]: chain = 'H'  # Ab heavy
     elif i <= mol_ends[4]: chain = 'L'  # Ab light
     else: chain = 'X'
-    if resname.upper() in SOLVENT:
-        continue
     element = (atomname.lstrip('0123456789')[0] if atomname.strip() else 'C').upper()
     pdb_lines.append(
         f"ATOM  {serial:5d} {atomname:<4s} {resname:>3s} {chain}{resnr:4d}    "
