@@ -1,0 +1,19 @@
+# MMPBSA target designs for Ab-pHLA binding calculations.
+# Format: <outer_replica> <design_name>
+# Usage: --targets-file /public/home/xuziyi/MMPBSA/inputs/mmpbsa_targets_top15.tsv
+#
+replica1	design_454_dldesign_3_best
+replica1	design_541_dldesign_31_best
+replica1	design_638_dldesign_18_best
+replica1	design_543_dldesign_26_best
+replica1	design_373_dldesign_13_best
+replica2	design_651_dldesign_22_best
+replica2	design_621_dldesign_0_best
+replica2	design_541_dldesign_8_best
+replica2	design_302_dldesign_0_best
+replica2	design_336_dldesign_7_best
+replica2	design_625_dldesign_26_best
+replica3	design_127_dldesign_30_best
+replica3	design_509_dldesign_16_best
+replica3	design_422_dldesign_25_best
+replica3	design_127_dldesign_1_best

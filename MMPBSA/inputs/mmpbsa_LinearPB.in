@@ -2,14 +2,14 @@
 # System: pHLA (peptide + HLA alpha chain), CHARMM36m force field
 # Trajectory: 150 ns production MD, 500 ps/frame → ~300 frames per replica
 #
-# Groups in NDX file:
-#   group 1 = prot  (HLA alpha chain, receptor)
-#   group 2 = pep   (peptide, ligand)
+# Groups in NDX file (0-based indexing):
+#   group 0 = prot  (HLA alpha chain, receptor)
+#   group 1 = pep   (peptide, ligand)
 #
 # Run command:
 #   gmx_MMPBSA -O -nogui -i mmpbsa_LinearPB.in \
 #       -cp topol_prot.top -cs prot.tpr \
-#       -ci index_mmpbsa.ndx -cg 1 2 \
+#       -ci index_mmpbsa.ndx -cg 0 1 \
 #       -ct protein.xtc -cr ref_chAB.pdb \
 #       -eo gmx_MMPBSA_plot.csv
 
