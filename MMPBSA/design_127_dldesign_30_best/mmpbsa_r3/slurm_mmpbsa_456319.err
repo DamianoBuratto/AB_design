@@ -1,0 +1,12 @@
+  keep: Protein_chain_P     1
+  keep: Protein_chain_A     1
+  keep: Protein_chain_H     1
+  keep: Protein_chain_L     1
+  drop: SOL         20755
+  drop: K                46
+  drop: CL               43
+  drop posre: topol_Protein_chain_A.itp: #include "posre_Protein_chain_A.itp"
+  drop posre: topol_Protein_chain_A.itp: #include "posre_HLA_CA.itp"
+  drop posre: topol_Protein_chain_H.itp: #include "posre_Protein_chain_H.itp"
+  drop posre: topol_Protein_chain_L.itp: #include "posre_Protein_chain_L.itp"
+  drop posre: topol_Protein_chain_P.itp: #include "posre_Protein_chain_P.itp"

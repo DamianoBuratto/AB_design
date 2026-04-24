@@ -217,9 +217,16 @@ class SystemSetup:
             
             f.write("TER\n")
             
-            # Write other chains if present
+            # Write other chains if present (insert TER between chains)
+            prev_chain = None
             for line in other_atoms:
+                chain = line[21]
+                if prev_chain is not None and chain != prev_chain:
+                    f.write("TER\n")
                 f.write(line)
+                prev_chain = chain
+            if prev_chain is not None:
+                f.write("TER\n")
             
             f.write("END\n")
         
