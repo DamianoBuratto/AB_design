@@ -20,13 +20,13 @@ FEP_ROOT="/public/home/xuziyi/FEP"
 GMXLIB_PATH="/public/home/xuziyi/FEP/force_fields/mutff"
 
 # --- Design ---
-DESIGN_NAME="design_373_dldesign_13_best"
-MD_REPLICA=1                                       # MD replica index (1, 2, or 3); override with --md-replica=N
+DESIGN_NAME="design_373_dldesign_13_best"         # Override with --design-name=<name>
+MD_REPLICA=1                                       # MD replica index; override with --md-replica=N
 NR_REPLICAS=3
 
 # --- SLURM resources ---
 SLURM_PARTITION="quick"
-SLURM_EXCLUDE="node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node24,node26,node23"
+SLURM_EXCLUDE="node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node18,node23,node26"
 SLURM_TIME="12:00:00"
 SLURM_NODES=1
 SLURM_NTASKS=1
@@ -57,6 +57,7 @@ for _arg in "$@"; do
     case "$_arg" in
         --with-reverse)    DIRECTIONS="forward reverse" ;;
         --force)           FORCE_RESUBMIT=true ;;
+        --design-name=*)   DESIGN_NAME="${_arg#*=}" ;;
         --md-replica=*)    MD_REPLICA="${_arg#*=}" ;;
         forward|reverse)   [[ "$DIRECTIONS" != *"$_arg"* ]] && DIRECTIONS="${DIRECTIONS:+$DIRECTIONS }$_arg" ;;
         *) echo "WARNING: Unknown argument '$_arg', ignoring." ;;

@@ -1,0 +1,32 @@
+# Input file for gmx_MMPBSA - Linear Poisson-Boltzmann (Ab-pHLA binding affinity)
+# System: Ab-pHLA complex (antibody H+L chains binding pHLA P+A), CHARMM36m force field
+# Trajectory: 150 ns production MD, 500 ps/frame ~ 300 frames per replica
+#
+# Groups in NDX file (0-based indexing):
+#   group 0 = receptor  (pHLA: peptide P + HLA A, 3009 atoms)
+#   group 1 = ligand    (antibody: heavy H + light L, 3495 atoms)
+#
+# Run command:
+#   gmx_MMPBSA -O -nogui -i mmpbsa_LinearPB.in \
+#       -cp topol_prot.top -cs design_prot.tpr \
+#       -ci index_mmpbsa.ndx -cg 0 1 \
+#       -ct design_prot_r1.xtc -cr design_chPAHL.pdb \
+#       -eo gmx_MMPBSA_plot.csv
+
+&general
+sys_name="Ab_pHLA_LinearPB",
+# Use all frames from the trajectory
+startframe=1,
+endframe=99999999,
+interval=1,
+# Apply PBC correction and center the complex
+/
+
+&pb
+# radiopt=0: use radii from the force field topology (recommended for GROMACS/CHARMM)
+radiopt=0,
+# istrng: ionic strength (mol/L), physiological 0.15 M
+istrng=0.15,
+# inp=2: non-polar contribution using cavity + dispersion model
+inp=2,
+/

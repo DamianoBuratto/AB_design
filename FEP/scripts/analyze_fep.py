@@ -39,6 +39,7 @@ import sys
 import argparse
 import warnings
 import logging
+import re
 
 import numpy as np
 import pandas as pd
@@ -71,7 +72,7 @@ R_KJ = 8.314e-3   # kJ/(mol·K)
 TEMPERATURE   = 310
 SKIP_FRACTION = 0.1
 N_WINDOWS     = 32
-MAX_REPLICAS  = 3
+MAX_REPLICAS  = 5
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Data discovery & loading
@@ -158,6 +159,160 @@ def load_state_data(base_path, state, n_windows, max_replicas, skip_frac, T):
                if rev_files else None
 
     return u_nk_fwd, u_nk_rev
+
+
+def extract_final_ddg_line(results_path):
+    try:
+        with open(results_path, encoding='utf-8') as handle:
+            for line in handle:
+                if 'ΔΔG_binding (final)' in line:
+                    return line.strip()
+    except Exception:
+        return '(see file)'
+    return '(see file)'
+
+
+def find_outer_replicas(outputs_root):
+    replica_ids = []
+    for name in os.listdir(outputs_root):
+        match = re.fullmatch(r'replica(\d+)', name)
+        if not match:
+            continue
+        rep_dir = os.path.join(outputs_root, name)
+        if os.path.isdir(rep_dir):
+            replica_ids.append(int(match.group(1)))
+    return sorted(replica_ids)
+
+
+def summary_sort_key(label):
+    match = re.fullmatch(r'replica(\d+)/(.*)', label)
+    if match:
+        return (int(match.group(1)), match.group(2))
+    return (10**9, label)
+
+
+def split_label(label):
+    match = re.fullmatch(r'(replica\d+)/(.*)', label)
+    if match:
+        return match.group(1), match.group(2)
+    return '', label
+
+
+def parse_final_ddg_values(result_line):
+    if not result_line:
+        return None
+
+    full_match = re.search(
+        r'ΔΔG_binding \(final\)\s*=\s*([+-]?\d+(?:\.\d+)?)\s*±\s*([+-]?\d+(?:\.\d+)?)\s*kJ/mol'
+        r'\s*\(\s*([+-]?\d+(?:\.\d+)?)\s*±\s*([+-]?\d+(?:\.\d+)?)\s*kcal/mol\s*\)',
+        result_line,
+    )
+    if full_match:
+        kJ = float(full_match.group(1))
+        err_kJ = abs(float(full_match.group(2)))
+        kcal = float(full_match.group(3))
+        err_kcal = abs(float(full_match.group(4)))
+        return {'kJ': kJ, 'err_kJ': err_kJ, 'kcal': kcal, 'err_kcal': err_kcal}
+
+    kj_only = re.search(
+        r'ΔΔG_binding \(final\)\s*=\s*([+-]?\d+(?:\.\d+)?)\s*±\s*([+-]?\d+(?:\.\d+)?)\s*kJ/mol',
+        result_line,
+    )
+    if not kj_only:
+        return None
+
+    kJ = float(kj_only.group(1))
+    err_kJ = abs(float(kj_only.group(2)))
+    kcal = kJ / 4.184
+    err_kcal = err_kJ / 4.184
+    return {'kJ': kJ, 'err_kJ': err_kJ, 'kcal': kcal, 'err_kcal': err_kcal}
+
+
+def build_csv_row(label, result_line):
+    design_group, design_name = split_label(label)
+    parsed = parse_final_ddg_values(result_line)
+    row = {
+        'design_group': design_group,
+        'Design': design_name,
+        'ΔΔG (kcal/mol)': '',
+        'Error (kcal/mol)': '',
+        'ΔΔG (kJ/mol)': '',
+        'Error (kJ/mol)': '',
+    }
+    if parsed is None:
+        return row
+
+    row['ΔΔG (kcal/mol)'] = f"{parsed['kcal']:.3f}"
+    row['Error (kcal/mol)'] = f"±{parsed['err_kcal']:.3f}"
+    row['ΔΔG (kJ/mol)'] = f"{parsed['kJ']:.3f}"
+    row['Error (kJ/mol)'] = f"±{parsed['err_kJ']:.3f}"
+    return row
+
+
+def update_batch_summary_table(outputs_root, records):
+    summary_tsv_path = os.path.join(outputs_root, 'ddg_analysis_summary.tsv')
+    summary_csv_path = os.path.join(outputs_root, 'ddg_analysis_summary.csv')
+
+    # Keep a detailed machine-readable table for script-side state merging.
+    rows_by_label = {}
+    if os.path.isfile(summary_tsv_path):
+        try:
+            existing = pd.read_csv(summary_tsv_path, sep='\t', dtype=str).fillna('')
+            for row in existing.to_dict('records'):
+                label = row.get('label', '').strip()
+                if label:
+                    rows_by_label[label] = row
+        except Exception as exc:
+            print(f"WARNING: could not read existing summary table {summary_tsv_path}: {exc}")
+
+    for record in records:
+        rows_by_label[record['label']] = record
+
+    merged_rows = [rows_by_label[label] for label in sorted(rows_by_label, key=summary_sort_key)]
+    pd.DataFrame(merged_rows, columns=['label', 'status', 'result', 'design_path']).to_csv(
+        summary_tsv_path, sep='\t', index=False, encoding='utf-8'
+    )
+
+    # Write user-facing CSV in the requested format.
+    csv_rows_by_label = {}
+    if os.path.isfile(summary_csv_path):
+        try:
+            existing_csv = pd.read_csv(summary_csv_path, dtype=str).fillna('')
+            for row in existing_csv.to_dict('records'):
+                group = row.get('design_group', '').strip()
+                design = row.get('Design', '').strip()
+                if group and design:
+                    csv_rows_by_label[f"{group}/{design}"] = {
+                        'design_group': group,
+                        'Design': design,
+                        'ΔΔG (kcal/mol)': row.get('ΔΔG (kcal/mol)', ''),
+                        'Error (kcal/mol)': row.get('Error (kcal/mol)', ''),
+                        'ΔΔG (kJ/mol)': row.get('ΔΔG (kJ/mol)', ''),
+                        'Error (kJ/mol)': row.get('Error (kJ/mol)', ''),
+                    }
+        except Exception as exc:
+            print(f"WARNING: could not read existing summary csv {summary_csv_path}: {exc}")
+
+    # Refresh CSV rows from the merged detailed table to keep them in sync.
+    for label, row in rows_by_label.items():
+        csv_rows_by_label[label] = build_csv_row(label, row.get('result', ''))
+
+    ordered_labels = sorted(csv_rows_by_label, key=summary_sort_key)
+    csv_rows = [csv_rows_by_label[label] for label in ordered_labels]
+    pd.DataFrame(
+        csv_rows,
+        columns=[
+            'design_group',
+            'Design',
+            'ΔΔG (kcal/mol)',
+            'Error (kcal/mol)',
+            'ΔΔG (kJ/mol)',
+            'Error (kJ/mol)',
+        ],
+    ).to_csv(summary_csv_path, index=False, encoding='utf-8-sig')
+
+    print(f"Summary table saved: {summary_tsv_path}")
+    print(f"Summary CSV saved: {summary_csv_path}")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -307,15 +462,13 @@ def is_analysis_done(design_dir):
 
 
 def find_designs_with_data(outputs_root):
-    """Scan outputs/replica{1..3}/<design>/ and return those containing any .xvg file.
+    """Scan outputs/replicaN/<design>/ and return those containing any .xvg file.
 
     Returns list of (label, abs_design_path) sorted by replica then design name.
     """
     results = []
-    for rep_n in range(1, 4):
+    for rep_n in find_outer_replicas(outputs_root):
         rep_dir = os.path.join(outputs_root, f"replica{rep_n}")
-        if not os.path.isdir(rep_dir):
-            continue
         for name in sorted(os.listdir(rep_dir)):
             design_dir = os.path.join(rep_dir, name)
             if not os.path.isdir(design_dir):
@@ -370,8 +523,6 @@ def analyze_one(base_path, args):
         print("\nERROR: MBAR calculation failed.")
         return False
 
-    # ── \u0394\u0394G (three estimates) ─────────────────────────────────────────────────
-    has_rev  = dG_b_r is not None and dG_u_r is not None
     ddG_f    = dG_b_f - dG_u_f
     err_f_v  = np.sqrt(err_b_f**2 + err_u_f**2)
     ddG      = dG_b   - dG_u
@@ -495,10 +646,12 @@ def main():
         print(f"ERROR: Directory not found: {top}")
         sys.exit(1)
 
+    batch_replica_dirs = find_outer_replicas(top)
+
     # Batch mode: directory has replicaN/ subdirs but no forward/ at top level
     is_batch = (
         not os.path.isdir(os.path.join(top, 'forward')) and
-        any(os.path.isdir(os.path.join(top, f"replica{n}")) for n in range(1, 4))
+        bool(batch_replica_dirs)
     )
 
     if not is_batch:
@@ -521,21 +674,19 @@ def main():
     if not args.force:
         print("  (use --force to re-run completed designs)\n")
 
-    summary = []   # list of (label, result_line)
+    summary_records = []
     n_ok = n_fail = n_skipped = 0
 
     for label, design_path in designs:
         if not args.force and is_analysis_done(design_path):
             n_skipped += 1
-            try:
-                txt = open(os.path.join(design_path, 'ddG_results.txt'),
-                           encoding='utf-8').read()
-                ddg_line = next(
-                    (l.strip() for l in txt.splitlines()
-                     if '\u0394\u0394G_binding (final)' in l), '(see file)')
-            except Exception:
-                ddg_line = '(see file)'
-            summary.append((label, f"[skip] {ddg_line}"))
+            ddg_line = extract_final_ddg_line(os.path.join(design_path, 'ddG_results.txt'))
+            summary_records.append({
+                'label': label,
+                'status': 'skipped',
+                'result': ddg_line,
+                'design_path': design_path,
+            })
             print(f"[SKIP] {label}")
             continue
 
@@ -549,24 +700,33 @@ def main():
 
         if ok:
             n_ok += 1
-            try:
-                txt = open(os.path.join(design_path, 'ddG_results.txt'),
-                           encoding='utf-8').read()
-                ddg_line = next(
-                    (l.strip() for l in txt.splitlines()
-                     if '\u0394\u0394G_binding (final)' in l), '(see file)')
-            except Exception:
-                ddg_line = '(see file)'
-            summary.append((label, ddg_line))
+            ddg_line = extract_final_ddg_line(os.path.join(design_path, 'ddG_results.txt'))
+            summary_records.append({
+                'label': label,
+                'status': 'ok',
+                'result': ddg_line,
+                'design_path': design_path,
+            })
         else:
             n_fail += 1
-            summary.append((label, 'FAILED'))
+            summary_records.append({
+                'label': label,
+                'status': 'failed',
+                'result': 'FAILED',
+                'design_path': design_path,
+            })
+
+    update_batch_summary_table(top, summary_records)
 
     # ── Batch summary ──────────────────────────────────────────────────────
     print(f"\n{'=' * 70}")
     print(f"BATCH SUMMARY  ({n_ok} succeeded  |  {n_fail} failed  |  {n_skipped} skipped)")
     print(f"{'=' * 70}")
-    for label, line in summary:
+    for record in sorted(summary_records, key=lambda item: summary_sort_key(item['label'])):
+        label = record['label']
+        line = record['result']
+        if record['status'] == 'skipped':
+            line = f"[skip] {line}"
         print(f"  {label:<50s}  {line}")
     print(f"{'=' * 70}")
     sys.exit(0 if n_fail == 0 else 1)

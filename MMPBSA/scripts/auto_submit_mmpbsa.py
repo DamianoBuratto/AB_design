@@ -66,7 +66,7 @@ HPC_SLURM_MEM    = "32G"         # ~6400 atoms (2x larger than pHLA-only)
 HPC_SLURM_TIME   = "2-00:00:00" # more time for larger system
 HPC_NODE_EXCLUDE = (
     "node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,"
-    "node11,node12,node13,node14,node15,node20,node21,node24,node26"
+    "node11,node12,node13,node14,node18,node23,node26"
 )
 
 STATE_FILE = ".mmpbsa_job_state.json"

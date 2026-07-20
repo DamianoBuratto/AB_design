@@ -4,7 +4,7 @@ batch_analysis.py — Batch MD RMSD analysis for all designs.
 
 Scans  BASE_DIR/{replica1,replica2,replica3}/design_NAME/
 for every design folder, runs antibody + CDR backbone RMSD analysis for each
-simulation replica (1-3), and outputs:
+simulation replicas, and outputs:
 
   Per-design (matching Analysis.ipynb format exactly):
     analysis_results/RMSD_antibody_replica_N.csv
@@ -45,8 +45,8 @@ from MDAnalysis import transformations
 
 # ── Default configuration ─────────────────────────────────────────────────────
 _DEFAULT_BASE_DIR      = Path.home() / 'MD' / 'results'
-_DESIGN_GROUPS         = ['replica1', 'replica2', 'replica3']
-_ACTIVE_REPLICAS       = [1, 2, 3]
+_DESIGN_GROUPS         = ['replica1', 'replica2', 'replica3', 'replica4', 'replica5']
+_ACTIVE_REPLICAS       = [1, 2, 3, 4, 5]
 _DEFAULT_STATS_SKIP_NS = 100
 _REF_FRAME             = 0
 _RMSD_STEP             = 1

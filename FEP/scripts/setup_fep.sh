@@ -24,8 +24,8 @@ GMXLIB_PATH="/public/home/xuziyi/FEP/force_fields/mutff"   # mutff force field d
 CONDA_ENV="fep_env"                                # Conda environment name
 
 # --- Design / mutation ---
-DESIGN_NAME="design_373_dldesign_13_best"         # Subdirectory under inputs/
-MD_REPLICA=1                                       # MD replica index (1, 2, or 3); override with --md-replica N
+DESIGN_NAME="design_373_dldesign_13_best"         # Subdirectory under inputs/; override with --design-name
+MD_REPLICA=1                                       # MD replica index; override with --md-replica N
 MUTATION="HIS239ARG"                              # Label only (for output naming)
 PEPTIDE_CHAIN="P"                                 # Chain ID of the mutated peptide
 PEPTIDE_RESID="8"                                 # Residue index within the peptide chain
@@ -69,6 +69,7 @@ while [[ $# -gt 0 ]]; do
         --direction)        DIRECTION="$2";        shift 2 ;;
         --rev-gro)          REV_GRO="$2";           shift 2 ;;
         --rev-gro-unbound)  REV_GRO_UNBOUND="$2";  shift 2 ;;
+        --design-name)      DESIGN_NAME="$2";      shift 2 ;;
         --md-replica)       MD_REPLICA="$2";        shift 2 ;;
         -h|--help)
             cat << 'HELP'
@@ -94,8 +95,13 @@ Usage: bash setup_fep.sh [OPTIONS]
       BOUND -- must be a separate file if provided manually).
       If omitted, auto-extracted from forward/unbound_R1/lambda{N-1}/PROD/prod.xtc.
 
+  --design-name <name>
+      Design directory name under inputs/replica<N>/ and outputs/replica<N>/.
+      Use this for manual forward/reverse runs when DESIGN_NAME should not use
+      the script default.
+
   --md-replica N
-      MD replica index (1, 2, or 3; default: 1). Controls which MD starting
+      MD replica index (default: 1). Controls which MD starting
       structure is used and determines the output path:
       outputs/replica<N>/<DESIGN>/{forward,reverse}/
 HELP

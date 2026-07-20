@@ -75,8 +75,8 @@ FEP_STATUS_FILE = FEP_ROOT / "fep_status.md"
 # ~/MD/results/replica{1..N_MD_REPLICAS}/<design>/...
 MD_RESULTS_DIR = MD_ROOT / "results"
 
-# Number of outer MD replica directories to scan (replica1, replica2, replica3)
-N_MD_REPLICAS = 3
+# Number of outer MD replica directories to scan (replica1..replica5)
+N_MD_REPLICAS = 5
 
 # Inner replica used as FEP starting structure (always replica_1 with underscore)
 # ~/MD/results/replica{N}/<design>/replica_1/md_r1.gro

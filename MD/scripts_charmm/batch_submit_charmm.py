@@ -17,6 +17,9 @@ from pathlib import Path
 from datetime import datetime
 
 
+SLURM_EXCLUDE = "node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node18,node23,node26"
+
+
 class BatchProcessor:
     """Batch processing manager class"""
     
@@ -73,9 +76,9 @@ class BatchProcessor:
     def generate_setup_script(self, pdb_name, setup_dir):
         """Generate SLURM script for system setup and equilibration"""
         slurm_script = f"""#!/bin/bash
-#SBATCH --job-name=pHLA_setup_charmm
-#SBATCH --partition=multi
-#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node15,node20,node21,node24,node26
+    #SBATCH --job-name=pHLA_setup_charmm
+    #SBATCH --partition=multi
+    #SBATCH --exclude={SLURM_EXCLUDE}
 #SBATCH --dependency=singleton
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -196,7 +199,7 @@ echo "  sbatch {setup_dir.parent}/submit_charmm_{pdb_name}_r3.slurm"
         slurm_script = f"""#!/bin/bash
 #SBATCH --job-name=charmm_{pdb_name}_r{replica_num}
 #SBATCH --partition=multi
-#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node15,node20,node21,node24,node26
+    #SBATCH --exclude={SLURM_EXCLUDE}
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16

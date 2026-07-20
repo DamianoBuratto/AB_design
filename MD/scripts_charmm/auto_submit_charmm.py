@@ -52,6 +52,7 @@ JOBS_PER_SYSTEM  = 4          # 1 setup + 3 replicas
 DEFAULT_MAX_JOBS = 16         # QOS limit
 DEFAULT_INTERVAL = 120        # seconds between queue polls
 DEFAULT_REPLICAS = 3
+DEFAULT_SLURM_EXCLUDE = "node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node18,node23,node26"
 # ────────────────────────────────────────────────────────────────────────────
 
 
@@ -103,11 +104,12 @@ def is_already_submitted(pdb: Path, data_dir: Path, output_root: Path) -> bool:
 
 def generate_setup_slurm(pdb_name: str, setup_dir: Path,
                          pdb_file: Path, mdp_dir: Path,
-                         script_dir: Path, gmx: str) -> Path:
+                         script_dir: Path, gmx: str,
+                         slurm_exclude: str) -> Path:
     script = f"""#!/bin/bash
 #SBATCH --job-name=setup_{pdb_name}
 #SBATCH --partition=multi
-#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node15,node20,node21,node24,node26
+#SBATCH --exclude={slurm_exclude}
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
@@ -168,11 +170,11 @@ echo "Setup + equilibration done for {pdb_name}"
 
 def generate_replica_slurm(pdb_name: str, setup_dir: Path, replica_dir: Path,
                             rep: int, mdp_dir: Path, script_dir: Path,
-                            gmx: str) -> Path:
+                            gmx: str, slurm_exclude: str) -> Path:
     script = f"""#!/bin/bash
 #SBATCH --job-name=prod_{pdb_name}_r{rep}
 #SBATCH --partition=multi
-#SBATCH --exclude=node1,node2,node3,node4,node5,node6,node7,node8,node9,node10,node11,node12,node13,node14,node15,node20,node21,node24,node26
+#SBATCH --exclude={slurm_exclude}
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
@@ -227,6 +229,7 @@ echo "Replica {rep} done for {pdb_name}"
 def submit_system(pdb: Path, pdb_dir: Path, data_dir: Path,
                   mdp_dir: Path, script_dir: Path, gmx: str,
                   num_replicas: int, dry_run: bool,
+                  slurm_exclude: str,
                   retry_setup: bool = False,
                   retry_replicas: list[int] | None = None) -> bool:
     """
@@ -265,10 +268,12 @@ def submit_system(pdb: Path, pdb_dir: Path, data_dir: Path,
         replica_dirs.append(rd)
 
     setup_slurm = generate_setup_slurm(name, setup_dir, pdb,
-                                       mdp_dir, script_dir, gmx)
+                                       mdp_dir, script_dir, gmx,
+                                       slurm_exclude)
     replica_slurms = [
         generate_replica_slurm(name, setup_dir, replica_dirs[i - 1],
-                               i, mdp_dir, script_dir, gmx)
+                               i, mdp_dir, script_dir, gmx,
+                               slurm_exclude)
         for i in range(1, num_replicas + 1)
     ]
 
@@ -450,7 +455,7 @@ def generate_status_report(
 
     # ---------- Collect all active designs ----------
     # key: (source_label, design_name)  value: pdb_dir Path or None
-    designs: dict[tuple[str, str], Path | None] = {}
+    designs: dict[tuple[str, str], Path] = {}
 
     def _register_data(pdb: Path) -> None:
         rel    = pdb.relative_to(data_dir)
@@ -617,6 +622,8 @@ def main():
                         help="Print what would be submitted without actually submitting")
     parser.add_argument("--report",   action="store_true",
                         help="Generate a status report and exit (no submission)")
+    parser.add_argument("--exclude", default=DEFAULT_SLURM_EXCLUDE,
+                        help="Comma-separated SLURM nodes to exclude when generating jobs")
     args = parser.parse_args()
 
     script_dir  = Path(__file__).parent.resolve()
@@ -625,6 +632,7 @@ def main():
     output_root = Path(args.output).resolve()
     mdp_dir     = Path(args.mdp).resolve()
     user        = get_current_user()
+    slurm_exclude = args.exclude
 
     jobs_per = 1 + args.replicas          # setup + replicas
     max_systems = args.max_jobs // jobs_per
@@ -641,6 +649,7 @@ def main():
     log(f"  output      : {output_root}")
     log(f"  max_jobs    : {args.max_jobs}  →  max {max_systems} systems at once")
     log(f"  poll every  : {args.interval}s")
+    log(f"  exclude     : {slurm_exclude}")
     log("=" * 60)
 
     for d in [data_dir, output_root, mdp_dir]:
@@ -692,6 +701,7 @@ def main():
                         submit_system(pdb_candidate, pdb_dir, data_dir,
                                       mdp_dir, script_dir, args.gmx,
                                       args.replicas, args.dry_run,
+                                      slurm_exclude,
                                       retry_setup=True)
                         can_submit    -= 1
                         submitted_this_cycle += 1
@@ -730,6 +740,7 @@ def main():
                     submit_system(pdb_candidate, pdb_dir, data_dir,
                                   mdp_dir, script_dir, args.gmx,
                                   args.replicas, args.dry_run,
+                                  slurm_exclude,
                                   retry_replicas=failed_reps)
                     # Retrying replicas only consumes 1 slot (no setup job)
                     can_submit    -= 1
@@ -746,7 +757,8 @@ def main():
             log(f"Submitting: {pdb.name}  →  {pdb_dir.relative_to(output_root)}")
             ok = submit_system(
                 pdb, pdb_dir, data_dir, mdp_dir, script_dir,
-                args.gmx, args.replicas, args.dry_run
+                args.gmx, args.replicas, args.dry_run,
+                slurm_exclude
             )
             if ok:
                 can_submit           -= 1
